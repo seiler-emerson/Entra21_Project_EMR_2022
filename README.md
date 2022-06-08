@@ -164,7 +164,7 @@ Neste projeto utiliZamos a linguagem JAVA e aplicamos os seguintes conceitos:
     <sub><b>Welliton Borges</b></sub></a> <a href="https://www.linkedin.com/in/welliton-borges-904331190/" title="Welliton Borges"></a>
     <br />
 
-[![Linkedin Badge](https://img.shields.io/badge/-seileremerson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/welliton-borges-904331190/)](https://www.linkedin.com/in/welliton-borges-904331190/)
+[![Linkedin Badge](https://img.shields.io/badge/-wellitonborges-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/welliton-borges-904331190/)](https://www.linkedin.com/in/welliton-borges-904331190/)
     </div>
 </div>
 <br>
