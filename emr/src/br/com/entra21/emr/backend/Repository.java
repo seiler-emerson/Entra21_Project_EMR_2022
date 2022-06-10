@@ -77,5 +77,11 @@ public class Repository {
 		System.out.println("Appointment Number: "+patients.get("paciente001").getAppointments().size());
 		
 	}
+
+	public static void generateDataBase() {
+		generateDataPatients(); 			//Banco de dados Pacientes
+		generateDataDoctors();			//Banco de dados Médicos
+		Repository.exibir();
+	}
 	
 }

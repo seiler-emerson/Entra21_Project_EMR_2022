@@ -11,17 +11,13 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		// Repository.gerarMassaTeste();  Chamar banco dados ficticio
+		Repository.generateDataBase();
 
-		Repository.generateDataPatients(); 			//Banco de dados Pacientes
-		Repository.generateDataDoctors();			//Banco de dados Médicos
-		Repository.generateDataAppointments();	//Banco de dados Atendimentos
-		
 		
 		byte option;
 		do {
 			System.out.println(displayMenu());
-			Repository.exibir();  //metodo de teste
+			Repository.generateDataBase();  //metodo de teste
 			option = input.nextByte();
 
 			switch (option) {
@@ -41,7 +37,6 @@ public class Main {
 			case 4: 
 				Principal.viewAboutInfo();
 				break; 
-
 			default:
 				System.out.println("Select a valid option!");
 				break;
@@ -56,6 +51,7 @@ public class Main {
 		
 		if(options==null) {
 			options = new ArrayList<>(Arrays.asList("Login","Record User","I forgot my password","About"));
+			
 		}
 		
  
@@ -67,7 +63,7 @@ public class Main {
 			menu += "\n\t"+(option+1)+" - "+options.get(option);
 		} 
 		menu += "\n========================================================";
-		menu += "\nSelect an option:";
+		menu += "\nSelect an option: ";
 		menu += "\n========================================================";
 
 		return menu;
