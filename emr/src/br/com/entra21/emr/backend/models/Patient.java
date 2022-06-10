@@ -3,8 +3,6 @@ package br.com.entra21.emr.backend.models;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import br.com.entra21.emr.backend.login.area.appointments.Appointment;
-
 
 public class Patient extends Person {
 	public ArrayList<Appointment> appointments;

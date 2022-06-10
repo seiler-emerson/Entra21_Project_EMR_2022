@@ -3,7 +3,7 @@ package br.com.entra21.emr.backend;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import br.com.entra21.emr.backend.anottations.FaltaImplementar;
+import br.com.entra21.emr.backend.anottations.NotImplemented;
 import br.com.entra21.emr.backend.login.area.MenuPrincipal;
 
 public class Principal {
@@ -12,12 +12,12 @@ public class Principal {
 		new MenuPrincipal("MENU PRINCIPAL", new ArrayList<String>(Arrays.asList("Electronic Medical Record", "Records", "Reports"))).playMenu();
 	}
 
-	@FaltaImplementar
+	@NotImplemented
 	public static void record() {
 		// CADASTRO DE USUARIOS 
 	}
 
-	@FaltaImplementar
+	@NotImplemented
 	public static void recoverPassword() {
 		//RECUPERACAO DE SENHA DE USUARIO
 	}
