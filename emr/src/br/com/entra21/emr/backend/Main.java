@@ -47,7 +47,7 @@ public class Main {
 			}
 
 		} while (option != 0);
-		System.out.println("Obrigado, volte sempre que quiser aprender mais");
+		System.out.println("Thanks! ");
 
 	}
 
