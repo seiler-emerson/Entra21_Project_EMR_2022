@@ -23,7 +23,7 @@ Se trata de um sistema utilizado para realizar a gestão de atendimentos de uma 
 
 ## ⚙️ Fluxograma da Aplicação
 
-O fluxo do sistema se baseia no conceito:
+O fluxo do sistema se baseia no conceito :
 - Paciente ➡️ Prontuário ➡️ Atendimentos
 
 ![Fluxograma](./image/emr_fluxo.png)
