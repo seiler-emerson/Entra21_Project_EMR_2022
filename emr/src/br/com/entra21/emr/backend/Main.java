@@ -17,7 +17,7 @@ public class Main {
 		byte option;
 		do {
 			System.out.println(displayMenu());
-			Repository.generateDataBase();  //metodo de teste
+			Repository.generateDataBase();  //metodo gerador de dados
 			option = input.nextByte();
 
 			switch (option) {
