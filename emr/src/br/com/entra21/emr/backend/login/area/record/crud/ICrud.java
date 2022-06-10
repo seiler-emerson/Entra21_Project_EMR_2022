@@ -12,7 +12,7 @@ public interface ICrud<T> {
 	ArrayList<String> options = new ArrayList<String>(
 			Arrays.asList("List", "Create", "Search", "Update", "Delete"));
 
-	public void listar(HashMap<String,T> list);
+	public void list(HashMap<String,T> list);
 
 	public void create();
 

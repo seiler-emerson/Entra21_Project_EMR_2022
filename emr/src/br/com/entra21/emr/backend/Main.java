@@ -15,7 +15,7 @@ public class Main {
 
 		Repository.generateDataPatients(); 		//Banco de dados Pacientes
 		Repository.generateDataDoctors();		//Banco de dados Médicos
-		Repository.generateDataAppointments();	//Banco de dados Atendimentos
+		//Repository.generateDataAppointments();	//Banco de dados Atendimentos
 		
 		byte option;
 		do {
