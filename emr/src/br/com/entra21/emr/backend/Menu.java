@@ -22,7 +22,7 @@ public class Menu {
 		do {
 			System.out.println("\n========================================================");
 			System.out.println("\t\tMENU "+this.title);
-			System.out.println("-1 = Finish sSstem");
+			System.out.println("-1 = Finish System");
 			System.out.println(" 0 = Return");
 			
 			if (options != null && !options.isEmpty()) {

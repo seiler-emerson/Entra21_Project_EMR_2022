@@ -1,19 +1,53 @@
-package br.com.entra21.emr.backend.login.area.record.crud;
+package br.com.entra21.emr.backend.login.area.emr.crud;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
+import br.com.entra21.emr.backend.Menu;
 import br.com.entra21.emr.backend.Repository;
 import br.com.entra21.emr.backend.models.Patient;
 
-public class PatientCRUD implements ICrud<Patient> {
-	
+
+
+public class PatientCRUD extends Menu implements ICrud<Patient>{
+
 	private HashMap<String, Patient> patients = Repository.patients;
+	
+	public PatientCRUD(String title, ArrayList<String> options) {
+		super("OPTIONS", options);
+		
+	}
+	
+	@Override
+	public byte captureOption() {
+
+		byte opcao = super.captureOption();
+		switch (opcao) {
+		case 1:
+			// CREATE
+			break;
+		case 2:
+			// READ
+			break;
+		case 3:
+			// UPDATE
+			break;
+		case 4:
+			// DETELE
+			break;
+		case 5:
+			// DETAILS
+			break;
+		default:
+			System.out.println("Opção inválida para o menu de " + super.getTitle());
+			break;
+		}
+		return opcao;
+	}
 
 	@Override
 	public void list(HashMap<String, Patient> patients) {
-		for(byte count=0;count<patients.size();count++) {
-			System.out.println("Contando "+count);
-		}
+		// TODO Auto-generated method stub
 		
 	}
 
@@ -52,9 +86,5 @@ public class PatientCRUD implements ICrud<Patient> {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	
-	
-	
 	
 }

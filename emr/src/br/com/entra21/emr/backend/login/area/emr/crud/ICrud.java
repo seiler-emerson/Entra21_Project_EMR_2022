@@ -1,4 +1,4 @@
-package br.com.entra21.emr.backend.login.area.record.crud;
+package br.com.entra21.emr.backend.login.area.emr.crud;
 
 import java.util.ArrayList;
 import java.util.Arrays;

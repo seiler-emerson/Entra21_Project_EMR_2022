@@ -13,9 +13,10 @@ public class Main {
 		
 		// Repository.gerarMassaTeste();  Chamar banco dados ficticio
 
-		Repository.generateDataPatients(); 		//Banco de dados Pacientes
-		Repository.generateDataDoctors();		//Banco de dados Médicos
+		Repository.generateDataPatients(); 			//Banco de dados Pacientes
+		Repository.generateDataDoctors();			//Banco de dados Médicos
 		//Repository.generateDataAppointments();	//Banco de dados Atendimentos
+		Repository.exibir();  //metodo de teste
 		
 		byte option;
 		do {
@@ -28,6 +29,7 @@ public class Main {
 				break;
 			case 1: 
 				Principal.login();
+				
 				break;
 			case 2: 
 				// METODO DE CADASTRO DE NOVOS USUARIOS

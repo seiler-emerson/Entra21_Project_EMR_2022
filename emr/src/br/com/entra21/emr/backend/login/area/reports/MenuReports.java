@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 import br.com.entra21.emr.backend.Menu;
 import br.com.entra21.emr.backend.Repository;
-import br.com.entra21.emr.backend.login.area.record.crud.PatientCRUD;
+import br.com.entra21.emr.backend.login.area.emr.crud.PatientCRUD;
 import br.com.entra21.emr.backend.models.Patient;
 
 public class MenuReports extends Menu {
@@ -14,7 +14,6 @@ public class MenuReports extends Menu {
 		super(title, options);
 		// TODO Auto-generated constructor stub
 	}
-
 	
 	@Override
 	public byte captureOption() {
@@ -42,6 +41,4 @@ public class MenuReports extends Menu {
 		return opcao;
 	}
 	
-	
-
 }

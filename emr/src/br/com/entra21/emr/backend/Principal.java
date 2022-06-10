@@ -9,7 +9,7 @@ import br.com.entra21.emr.backend.login.area.MenuPrincipal;
 public class Principal {
 
 	public static void login() {
-		new MenuPrincipal("MENU PRINCIPAL", new ArrayList<String>(Arrays.asList("Electronic Medical Record", "Records", "Reports"))).playMenu();
+		new MenuPrincipal("MENU PRINCIPAL", new ArrayList<String>(Arrays.asList("Electronic Medical Record", "Reports"))).playMenu();
 	}
 
 	@NotImplemented
