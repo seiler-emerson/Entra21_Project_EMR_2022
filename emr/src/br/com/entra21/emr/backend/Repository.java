@@ -81,7 +81,7 @@ public class Repository {
 	public static void generateDataBase() {
 		generateDataPatients(); 			//Banco de dados Pacientes
 		generateDataDoctors();			//Banco de dados Médicos
-		Repository.exibir();
+		//Repository.exibir();
 	}
 	
 }
