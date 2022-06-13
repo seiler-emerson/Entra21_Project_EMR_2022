@@ -198,7 +198,7 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 	@Override
 	public void details(HashMap<String, Patient> patients) {
 		list(patients);
-		System.out.println("Select a patient: ");
+		System.out.println("Select a patient for CPF: ");
 		String option = getInput().next();
 		System.out.println(option);
 		
