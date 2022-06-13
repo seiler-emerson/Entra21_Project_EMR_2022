@@ -1,6 +1,8 @@
 package br.com.entra21.emr.backend.login.area.emr.crud;
 
-import java.util.ArrayList;
+
+
+
 import java.util.HashMap;
 
 import br.com.entra21.emr.backend.Menu;
@@ -11,8 +13,8 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 
 	private HashMap<String, Doctor> doctors = Repository.doctors;
 	
-	public DoctorCRUD(String title, ArrayList<String> options) {
-		super(title, options);
+	public DoctorCRUD() {
+		super("DOCTOR", options);
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -23,6 +25,7 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		switch (opcao) {
 		case 1:
 			// CREATE
+			System.out.println("criando");
 			break;
 		case 2:
 			// READ
@@ -56,19 +59,19 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 	}
 
 	@Override
-	public Doctor search(Doctor chave) {
+	public Doctor search(Doctor key) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void update(Doctor chave) {
+	public void update(Doctor key) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void detele(Doctor chave) {
+	public void delete(Doctor key) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -84,5 +87,11 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public void details(HashMap<String, Doctor> doctors) {
+		
+	}
+	
 
 }
