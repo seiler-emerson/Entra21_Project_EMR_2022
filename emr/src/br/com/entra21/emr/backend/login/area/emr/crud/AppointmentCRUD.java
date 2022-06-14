@@ -116,18 +116,8 @@ public class AppointmentCRUD extends Menu {
 		patients.get(keyPatient).getAppointments().remove(keyAppointment);
 	}
 	
-//	public Appointment selectAppointment() {
-//		listAppointments(patients);
-//		System.out.println("Select the patient CPF:");
-//		String keyPatient = getInput().next();
-//		System.out.println("You selected the patient "+patients.get(keyPatient).getName());
-//		System.out.println("Select the patient APPOINTMENT of patient selected:");
-//		byte keyAppointment = getInput().nextByte();
-//		
-//		return patients.get(keyPatient).getAppointments().get(keyAppointment);
-//	}
 	
-	@NotImplemented //falta medico do atendimento
+	@Implemented
 	public void details(HashMap<String, Patient> patients) {
 		
 		listAppointments(patients);
@@ -139,6 +129,7 @@ public class AppointmentCRUD extends Menu {
 		
 		
 		System.out.println("\nAPPOINTMENTS");
+		System.out.println("Doctor responsible: "+patients.get(keyPatient).getAppointments().get(keyAppointment).getDoctor().getName());
 		System.out.println("Patient Name: "+patients.get(keyPatient).getName());
 		System.out.println("Patient CPF: "+patients.get(keyPatient).getCpf());
 		System.out.println("Service date: "+patients.get(keyPatient).getAppointments().get(keyAppointment).getDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
@@ -148,10 +139,11 @@ public class AppointmentCRUD extends Menu {
 		System.out.println("Certificate/Declaration: "+patients.get(keyPatient).getAppointments().get(keyAppointment).getCertificate());
 		System.out.println("Forwarding: "+patients.get(keyPatient).getAppointments().get(keyAppointment).getForwarding());
 		System.out.println("Medical release: "+patients.get(keyPatient).getAppointments().get(keyAppointment).getMedicalRelease());
-		//MEDICO DO ATENDIMENTO
 	}
 	
 	public void captureValues(Appointment newAppointment) {
+		
+		newAppointment.setDoctor(captureDoctor());
 		newAppointment.setDate(LocalDate.now());
 		newAppointment.setHour(LocalTime.now());
 		newAppointment.setAnamnesis(getInput().nextLine());
@@ -223,6 +215,15 @@ public class AppointmentCRUD extends Menu {
 		medicalRelease = getInput().nextLine();
 		
 		return medicalRelease;
+	}
+	
+	public Doctor captureDoctor() {
+		new DoctorCRUD().list(doctors);
+		
+		System.out.println("Inform the doctor CPF:");
+		Doctor captureDoctor = doctors.get(super.getInput().next());
+		
+		return captureDoctor;
 	}
 	
 }

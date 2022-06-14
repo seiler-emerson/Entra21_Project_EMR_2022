@@ -11,7 +11,6 @@ import br.com.entra21.emr.backend.Menu;
 import br.com.entra21.emr.backend.Repository;
 import br.com.entra21.emr.backend.anottations.Description;
 import br.com.entra21.emr.backend.anottations.Implemented;
-import br.com.entra21.emr.backend.anottations.NotImplemented;
 import br.com.entra21.emr.backend.models.Appointment;
 import br.com.entra21.emr.backend.models.Patient;
 
@@ -145,6 +144,7 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 		
 		System.out.println("Enter the name of the patient's mother:");
 		patient.setNameMother(getInput().nextLine());
+		patient.setNameMother(getInput().nextLine());
 		
 		System.out.println("Enter the name of the patient's father:");
 		patient.setNameFather(getInput().nextLine());
@@ -217,7 +217,7 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 		}
 	}
 	
-	@NotImplemented
+	@Implemented
 	@Description(value = "Method for listing and detailing patient care.")
 	public static void listAppointments(HashMap<String, Patient> patients, String option) {
 		for(byte count=0;count<patients.get(option).appointments.size();count++) {
@@ -229,7 +229,7 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 			System.out.println("Certificate/Declaration :"+patients.get(option).getAppointments().get(count).getCertificate());
 			System.out.println("Forwarding :"+patients.get(option).getAppointments().get(count).getForwarding());
 			System.out.println("Medical release :"+patients.get(option).getAppointments().get(count).getMedicalRelease());
-			//MEDICO DO ATENDIMENTO
+			System.out.println("Doctor responsible: "+patients.get(option).getAppointments().get(count).getDoctor().getName());
 		} 
 	}
 
