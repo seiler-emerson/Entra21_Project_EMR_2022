@@ -7,6 +7,7 @@ import br.com.entra21.emr.backend.Menu;
 import br.com.entra21.emr.backend.Repository;
 import br.com.entra21.emr.backend.anottations.Description;
 import br.com.entra21.emr.backend.anottations.Implemented;
+import br.com.entra21.emr.backend.login.area.emr.crud.PatientCRUD;
 import br.com.entra21.emr.backend.models.Patient;
 
 public class MenuReports extends Menu {
@@ -30,7 +31,7 @@ public class MenuReports extends Menu {
 			break;
 		case 3: 
 			System.out.println("PATIENTS LIST");
-			
+			new PatientCRUD().list(patients);
 			break;
 		case 4: 
 		default:
