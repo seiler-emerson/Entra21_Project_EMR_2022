@@ -6,6 +6,7 @@ import java.time.LocalTime;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+import br.com.entra21.emr.backend.anottations.NotImplemented;
 import br.com.entra21.emr.backend.models.Appointment;
 import br.com.entra21.emr.backend.models.Doctor;
 import br.com.entra21.emr.backend.models.Patient;
@@ -19,19 +20,19 @@ public class Repository {
 	//PATIENTS
 	public static void generateDataPatients() {
 		patients.put("001", new Patient("Sheldon", "001", "Mary Cooper", "George Cooper", "Av Los Robles Avenue, 2311 Pasadena", "m", LocalDate.of(1980, 2, 26)));
-		patients.get("001").setAppointments(new LinkedList<>());
+		//patients.get("001").setAppointments(new LinkedList<>());
 		
 		patients.put("002", new Patient("Joana da Silva", "002", "Julia Garcia", "Joao da Silca", "Rua 456, Decimal, Numerais", "f", LocalDate.of(1985, 6, 13)));
-		patients.get("002").setAppointments(new LinkedList<>());
+		//patients.get("002").setAppointments(new LinkedList<>());
 		
 		patients.put("003", new Patient("Cleber Silveira", "003", "Carla Silva Garcia", "Olindio Silveira", "Rua 456", "m", LocalDate.of(1995, 4, 13)));
-		patients.get("003").setAppointments(new LinkedList<>());
+		//patients.get("003").setAppointments(new LinkedList<>());
 		
 		patients.put("004", new Patient("Silvana Github", "004", "Olivia Github", "Linus Github", "Rua Versionamento, Git, Online", "f", LocalDate.of(2003, 10, 6)));
-		patients.get("004").setAppointments(new LinkedList<>());
+		//patients.get("004").setAppointments(new LinkedList<>());
 		
 		patients.put("005", new Patient("Joao da Silva", "005", "Maria da Silva", "Jose da Silva", "Rua 123, Centro, Numerais", "m", LocalDate.of(1945, 2, 1)));
-		patients.get("005").setAppointments(new LinkedList<>());
+		//patients.get("005").setAppointments(new LinkedList<>());
 	}
 	
 	//DOCTORS
@@ -42,9 +43,9 @@ public class Repository {
 	
 	//APPOINTMENTS
 	public static void generateDataAppointments() {
-		Appointment atendimento1 = new Appointment("Dor abdominal", "laxante - 8/8h - 1 dia ", "Atestado", "encaminhamento para gastro", "Liberado", LocalDate.of(2022, 2, 1), LocalTime.of(20, 10));
-		patients.get("001").appointments.add(atendimento1);
+		patients.get("001").appointments.add(new Appointment("Dor abdominal", "laxante - 8/8h - 1 dia ", "Atestado", "encaminhamento para gastro", "Liberado", LocalDate.of(2022, 2, 1), LocalTime.of(20, 10)));
 		
+		@NotImplemented
 		Appointment atendimento2 = new Appointment("Dor de cabeca", "paracetamol - 8/8h - se dor ", "Declaracao de comparecimento", "encaminhamento para neuro", "Liberado", LocalDate.of(2021, 12, 11), LocalTime.of(22, 06));
 		patients.get("001").appointments.add(atendimento2);
 		
