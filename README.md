@@ -6,7 +6,7 @@
 * [Class diagram](#Class-diagram)
 * [How to run the project](#How-to-run-the-project)
 * [Technologies](#technologies)  
-* [Authors](#author)
+* [Authors](#Author)
 <!--te-->
 
 </br>
