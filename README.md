@@ -1,11 +1,13 @@
 📜 Table of Contents
 =================
+<!--ts-->
 * [About the project](#About-the-oroject)
-* [Application flowchart](#flowchart)
-* [Class diagram](#diagram)
-* [How to run the project](#-How-to-run-the-project)
-* [Technologies](#-technologies)  
-* [Authors](#-author)
+* [Application flowchart](#Applocation-flowchart)
+* [Class diagram](#Class-diagram)
+* [How to run the project](#How-to-run-the-project)
+* [Technologies](#technologies)  
+* [Authors](#author)
+<!--te-->
 
 </br>
 
