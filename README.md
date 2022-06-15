@@ -1,115 +1,113 @@
-# Project EMR - Electronic Medical Record
-
-📜 Tabela de conteúdos
+📜 Table of Contents
 =================
-* [Sobre o projeto](#sobre-o-projeto)
-* [Fluxograma da aplicação](#fluxograma)
-* [Diagrama de classes](#diagrama)
-* [Como executar o projeto](#-como-executar-o-projeto)
-* [Tecnologias](#-tecnologias)  
-* [Autores](#-autor)
+* [About the project](#About-the-oroject)
+* [Application flowchart](#flowchart)
+* [Class diagram](#diagram)
+* [How to run the project](#-How-to-run-the-project)
+* [Technologies](#-technologies)  
+* [Authors](#-author)
 
 </br>
 
 ---
 
-## 💻 Sobre o projeto
+## 💻 About the project
 
-Se trata de um sistema utilizado para realizar a gestão de atendimentos de uma clínica. Possui funcionalidades para realizar a gestão de pacientes com seus respectivos prontuários que por sua vez armazenam seus atendimentos.
+It is a system used to manage the attendance of a clinic. It has functionalities to manage patients with their respective medical records, which in turn store their attendances.
 
 <br>
 
 ---
 
-## ⚙️ Fluxograma da Aplicação
+## ⚙️ Application flowchart
 
-O fluxo do sistema se baseia no conceito :
-- Paciente ➡️ Prontuário ➡️ Atendimentos
+The system flow is based on the concept:
+- Patient ➡️ Medical Record ➡️ Attendance
 
-![Fluxograma](./image/emr_fluxo.png)
+![Flowchart](./image/emr_fluxo.png)
 
 </br>
 
 ----
 
-## Diagrama de Classes
+## Class Diagram
  
-![Diagrama](./image/emr_diagrama.png)
+![Diagram](./image/emr_diagrama.png)
 
 </br>
 
 ----
 
-# Instruções para rodar o Projeto
+# Instructions for running the Project
 
-1. Faça uma cópia do projeto para sua máquina: 
+1. Make a copy of the project to your machine:
     - git clone https://github.com/seiler-emerson/Entra21_Project_EMR_2022.git
-    - Ou um download direto da página [AQUI](https://github.com/seiler-emerson/Entra21_Project_EMR_2022).
-    - Importe o projeto em sua IDE e execute a aplicação.
-        - Tutorial de como importar um projeto na IDE Eclipse [AQUI](https://www.youtube.com/watch?v=R-8OF9ipeT8).
-2. Execute via replit
-    - ICONE COM LINK
+    -Or a direct download from the page [HERE](https://github.com/seiler-emerson/Entra21_Project_EMR_2022).
+    - Import the project into your IDE and run the application.
+        - Tutorial on how to import a project in the Eclipse IDE [HERE](https://www.youtube.com/watch?v=R-8OF9ipeT8).
+2. Run via replica
+    - ICON WITH LINK
 
 </br>
 
 ---
 
-## ⚒ Tecnologias e Conceitos
+## ⚒ Technologies and Concepts
 
-Neste projeto utiliZamos a linguagem JAVA e aplicamos os seguintes conceitos:
+In this project we use the JAVA language and apply the following concepts:
 
 <details>	
-  <summary><b>💡&nbsp; Lógica de programação</b></summary>
+  <summary><b>💡&nbsp; Programming logic</b></summary>
 
 1. Git
-    - Repositório
-    - Documentação
+    - Repository
+    - Documentation
     - README.md
     - Replit
-2. Organização do projeto
+2. Project organization
     - Packages / sub-packages
-    - Nomenclatura
-3. Elementos básicos
-    - variáveis
-    - constantes
-    - comentários
-4. Estruturas de decisão
+    - Nomenclature
+3. Basic elements
+    - variables
+    - constants
+    - comments
+4. Decision structures
     - if, else-if, else
     - switch
-5. Laços de repetição
+5. Repeat loops
     - for
     - while
     - do-while
-6. Modularização
-    - métodos com ou sem parâmetros e com ou sem retornos
-    - recursividade
+6. Modularization
+    - methods with or without parameters and with or without returns
+    - recursion
 </details>
 
 <details>	
-  <summary><b>🗃️&nbsp; Orientação a objetos</b></summary>
+  <summary><b>🗃️&nbsp; Object orientation</b></summary>
   
 1. Classes
-    - diagrama de classe
-    - atributos
-    - construtores
-    - encapsulamento
-    - métodos específicos
-    - instanciar objetos
-2. Herança
+    - class diagram
+    - attributes
+    - builders
+    - encapsulation
+    - specific methods
+    - instantiate objects
+2. Heritage
     - extends
-    - criar novos construtores com base na super classe
-    - Polimorfismo
-        - Apenas aproveitar os métodos
-        - Fazer completamente de forma especifica
-        - Sobrescrever para:
-            - Fazer de forma especifica
-            - Aproveitar o comportamento e fazer um complemento
-3. Polimorfismo
+    - create new constructors based on the super class
+    - Polymorphism
+        - Just take advantage of the methods
+        - Do it completely specifically
+        - Overwrite to:
+            - Do it specifically
+            - Take advantage of the behavior and make a complement
+3. Polymorphism
     - interfaces
 </details>
 
 <details>
-   <summary><b>⚠️&nbsp; Java avançado</b></summary>
+   <summary><b>⚠️&nbsp; Advanced java</b></summary>
 
 1. Classes wrapper
 2. ENUM
@@ -119,7 +117,7 @@ Neste projeto utiliZamos a linguagem JAVA e aplicamos os seguintes conceitos:
     - LinkedList
     - HashSet
     - HashMap
-5. Funções Lambda
+5. Lambda functions
 6. Generics
 7. Dates
 8. Exceptions
@@ -130,7 +128,7 @@ Neste projeto utiliZamos a linguagem JAVA e aplicamos os seguintes conceitos:
 
 ---
 
-## 👷 Autores
+## 👷 Authors
 
 <br>
 
