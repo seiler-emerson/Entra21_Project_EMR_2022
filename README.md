@@ -1,4 +1,3 @@
-# Project EMR - Electronic Medical Record
 
 📜 Table of Contents
 
@@ -6,7 +5,7 @@
 * [Application flowchart](#Application-flowchart)
 * [Class diagram](#Class-diagram)
 * [Instructions for execute the Project](#rocket-Instructions-for-execute-the-Project)
-  -[Technologies and Concepts](#Technologies-and-Concepts)  
+  - [Technologies and Concepts](#Technologies-and-Concepts)  
 * [Authors](#Authors)
 
 </br>
