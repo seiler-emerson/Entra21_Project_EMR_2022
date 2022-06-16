@@ -1,6 +1,7 @@
 
 ## Project EMR - Electronic Medical Record
-##📜 Table of Contents
+
+## :scroll: Table of Contents
 
 * [About the project](#computer-About-the-project)
 * [Application flowchart](#gear-Application-flowchart)
@@ -130,7 +131,7 @@ In this project we use JAVA language and apply the following concepts:
 
 ---
 
-##:student: Authors
+## :student: Authors
 
 <br>
 
