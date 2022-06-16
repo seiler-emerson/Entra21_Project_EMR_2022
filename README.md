@@ -1,9 +1,9 @@
 
-##<h1 align="center"> Project EMR - Electronic Medical Record</h1>
-📜 Table of Contents
+## Project EMR - Electronic Medical Record
+##📜 Table of Contents
 
 * [About the project](#computer-About-the-project)
-* [Application flowchart](##gear-Application-flowchart)
+* [Application flowchart](#gear-Application-flowchart)
 * [Class diagram](#Class-diagram)
 * [Instructions for execute the Project](#interrobang-Instructions-for-execute-the-Project)
 * [Technologies and Concepts](#hammer_and_wrench-Technologies-and-Concepts)  
@@ -130,7 +130,7 @@ In this project we use JAVA language and apply the following concepts:
 
 ---
 
-## Authors
+##:student: Authors
 
 <br>
 
