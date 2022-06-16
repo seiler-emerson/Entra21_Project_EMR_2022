@@ -2,12 +2,12 @@
 
 📜 Table of Contents
 
-* [About the project](#💻-About-the-project)
-* [Application flowchart](#⚙️-Application-flowchart)
+* [About the project](#💻About-the-project)
+* [Application flowchart](#⚙️Application-flowchart)
 * [Class diagram](#Class-diagram)
 * [How to execute the project](#How-to-execute-the-project)
 * [Technologies](#Technologies)  
-* [Authors](#👷-Authors)
+* [Authors](#👷Authors)
 
 </br>
 
