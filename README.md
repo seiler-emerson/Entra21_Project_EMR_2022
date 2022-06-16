@@ -5,7 +5,7 @@
 * [About the project](#computer-About-the-project)
 * [Application flowchart](##gear-Application-flowchart)
 * [Class diagram](#Class-diagram)
-* [Instructions for execute the Project](#rocket-Instructions-for-execute-the-Project)
+* [Instructions for execute the Project](#interrobang-Instructions-for-execute-the-Project)
 * [Technologies and Concepts](#hammer_and_wrench-Technologies-and-Concepts)  
 * [Authors](#Authors)
 
@@ -40,7 +40,7 @@ The system flow is based on the concept:
 
 ----
 
-## :rocket: Instructions for execute the Project
+## :interrobang: Instructions for execute the Project
 
 1. Make a project copy to your machine:
     - git clone https://github.com/seiler-emerson/Entra21_Project_EMR_2022.git
