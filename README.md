@@ -1,13 +1,20 @@
+#<h1 align="center"> Project EMR - Electronic Medical Record</h1>
+
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p
+![GitHub Release Date](https://img.shields.io/github/release-date/dropbox/dropbox-sdk-java)
+
 📜 Table of Contents
+
 =================
-<!--ts-->
-* [About the project](#About-the-oroject)
-* [Application flowchart](#Applocation-flowchart)
+
+* [About the project](#About-the-project)
+* [Application flowchart](#Application-flowchart)
 * [Class diagram](#Class-diagram)
-* [How to run the project](#How-to-run-the-project)
-* [Technologies](#technologies)  
-* [Authors](#Author)
-<!--te-->
+* [How to execute the project](#How-to-execute-the-project)
+* [Technologies](#Technologies)  
+* [Authors](#Authors)
 
 </br>
 
@@ -15,7 +22,7 @@
 
 ## 💻 About the project
 
-It is a system used to manage the attendance of a clinic. It has functionalities to manage patients with their respective medical records, which in turn store their attendances.
+It is a system used to manage the attendance of a clinic. It has functionalities to manage patients with their respective medical records, which in turn store their medical consultation.
 
 <br>
 
@@ -24,7 +31,7 @@ It is a system used to manage the attendance of a clinic. It has functionalities
 ## ⚙️ Application flowchart
 
 The system flow is based on the concept:
-- Patient ➡️ Medical Record ➡️ Attendance
+- Patient ➡️ Medical Record ➡️ medical consultation 
 
 ![Flowchart](./image/emr_fluxo.png)
 
@@ -40,13 +47,13 @@ The system flow is based on the concept:
 
 ----
 
-# Instructions for running the Project
+# Instructions for execute the Project
 
-1. Make a copy of the project to your machine:
+1. Make a project copy to your machine:
     - git clone https://github.com/seiler-emerson/Entra21_Project_EMR_2022.git
     -Or a direct download from the page [HERE](https://github.com/seiler-emerson/Entra21_Project_EMR_2022).
-    - Import the project into your IDE and run the application.
-        - Tutorial on how to import a project in the Eclipse IDE [HERE](https://www.youtube.com/watch?v=R-8OF9ipeT8).
+    - Import the project into your IDE and execute the application.
+        - Tutorial how to import a project in the Eclipse IDE [HERE](https://www.youtube.com/watch?v=R-8OF9ipeT8).
 2. Run via replica
     - ICON WITH LINK
 
@@ -56,7 +63,7 @@ The system flow is based on the concept:
 
 ## ⚒ Technologies and Concepts
 
-In this project we use the JAVA language and apply the following concepts:
+In this project we use JAVA language and apply the following concepts:
 
 <details>	
   <summary><b>💡&nbsp; Programming logic</b></summary>
@@ -170,3 +177,4 @@ In this project we use the JAVA language and apply the following concepts:
 <br>
 
 ---
+
