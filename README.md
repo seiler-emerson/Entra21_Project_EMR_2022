@@ -2,18 +2,18 @@
 
 📜 Table of Contents
 
-* [About the project](#💻About-the-project)
-* [Application flowchart](#⚙️Application-flowchart)
+* [About the project](#About-the-project)
+* [Application flowchart](#Application-flowchart)
 * [Class diagram](#Class-diagram)
 * [How to execute the project](#How-to-execute-the-project)
 * [Technologies](#Technologies)  
-* [Authors](#👷Authors)
+* [Authors](#Authors)
 
 </br>
 
 ---
 
-## 💻 About the project 
+## About the project 
 
 It is a system used to manage the attendance of a clinic. It has functionalities to manage patients with their respective medical records, which in turn store their medical consultation.
 
@@ -21,7 +21,7 @@ It is a system used to manage the attendance of a clinic. It has functionalities
 
 ---
 
-## ⚙️ Application flowchart 
+## Application flowchart 
 
 The system flow is based on the concept:
 - Patient ➡️ Medical Record ➡️ medical consultation 
@@ -54,7 +54,7 @@ The system flow is based on the concept:
 
 ---
 
-## ⚒Technologies and Concepts
+## Technologies and Concepts
 
 In this project we use JAVA language and apply the following concepts:
 
@@ -130,7 +130,7 @@ In this project we use JAVA language and apply the following concepts:
 
 ---
 
-## 👷Authors
+## Authors
 
 <br>
 
