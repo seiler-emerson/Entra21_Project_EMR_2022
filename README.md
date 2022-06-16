@@ -5,8 +5,8 @@
 * [About the project](#About-the-project)
 * [Application flowchart](#Application-flowchart)
 * [Class diagram](#Class-diagram)
-* [How to execute the project](#How-to-execute-the-project)
-* [Technologies](#Technologies)  
+* [Instructions for execute the Project](#Instructions-for-execute-the-Project)
+* [Technologies and Concepts](#Technologies-and-Concepts)  
 * [Authors](#Authors)
 
 </br>
