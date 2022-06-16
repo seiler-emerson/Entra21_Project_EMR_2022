@@ -2,18 +2,18 @@
 
 📜 Table of Contents
 
-* [About the project](#About-the-project)
+* [About the project](#interrobang-About-the-project)
 * [Application flowchart](#Application-flowchart)
 * [Class diagram](#Class-diagram)
-* [Instructions for execute the Project](#Instructions-for-execute-the-Project)
-* [Technologies and Concepts](#Technologies-and-Concepts)  
+* [Instructions for execute the Project](#rocket-Instructions-for-execute-the-Project)
+  -[Technologies and Concepts](#Technologies-and-Concepts)  
 * [Authors](#Authors)
 
 </br>
 
 ---
 
-## About the project 
+# :interrobang: About the project 
 
 It is a system used to manage the attendance of a clinic. It has functionalities to manage patients with their respective medical records, which in turn store their medical consultation.
 
@@ -40,7 +40,7 @@ The system flow is based on the concept:
 
 ----
 
-# Instructions for execute the Project
+# :rocket: Instructions for execute the Project
 
 1. Make a project copy to your machine:
     - git clone https://github.com/seiler-emerson/Entra21_Project_EMR_2022.git
@@ -54,7 +54,7 @@ The system flow is based on the concept:
 
 ---
 
-## Technologies and Concepts
+##🧑‍💻 Technologies and Concepts
 
 In this project we use JAVA language and apply the following concepts:
 
