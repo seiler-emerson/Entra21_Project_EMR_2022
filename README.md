@@ -8,7 +8,7 @@
 * [Class diagram](#Class-diagram)
 * [Instructions for execute the Project](#interrobang-Instructions-for-execute-the-Project)
 * [Technologies and Concepts](#hammer_and_wrench-Technologies-and-Concepts)  
-* [Authors](#Authors)
+* [Authors](#student-Authors)
 
 </br>
 
