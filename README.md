@@ -1,14 +1,7 @@
-#<h1 align="center"> Project EMR - Electronic Medical Record</h1>
+# Project EMR - Electronic Medical Record
 
-<p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p
-![GitHub Release Date](https://img.shields.io/github/release-date/dropbox/dropbox-sdk-java)
-
-📜 Table of Contents
-
+## Table of Contents📜
 =================
-
 * [About the project](#About-the-project)
 * [Application flowchart](#Application-flowchart)
 * [Class diagram](#Class-diagram)
@@ -20,7 +13,7 @@
 
 ---
 
-## 💻 About the project
+##  About the project 💻
 
 It is a system used to manage the attendance of a clinic. It has functionalities to manage patients with their respective medical records, which in turn store their medical consultation.
 
@@ -28,7 +21,7 @@ It is a system used to manage the attendance of a clinic. It has functionalities
 
 ---
 
-## ⚙️ Application flowchart
+##  Application flowchart ⚙️
 
 The system flow is based on the concept:
 - Patient ➡️ Medical Record ➡️ medical consultation 
@@ -61,7 +54,7 @@ The system flow is based on the concept:
 
 ---
 
-## ⚒ Technologies and Concepts
+##  Technologies and Concepts ⚒
 
 In this project we use JAVA language and apply the following concepts:
 
@@ -137,7 +130,7 @@ In this project we use JAVA language and apply the following concepts:
 
 ---
 
-## 👷 Authors
+##  Authors👷
 
 <br>
 
