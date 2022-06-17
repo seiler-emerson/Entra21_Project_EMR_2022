@@ -3,6 +3,7 @@ package br.com.entra21.emr.backend.models;
 import java.time.LocalDate;
 
 public class Person {
+
 	private String name;
 	private String cpf;
 	private String nameMother;
@@ -10,7 +11,7 @@ public class Person {
 	private String address;
 	private String genre;
 	private LocalDate birth;
-	
+
 	public Person() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -83,4 +84,5 @@ public class Person {
 	public void setBirth(LocalDate birth) {
 		this.birth = birth;
 	}
+
 }

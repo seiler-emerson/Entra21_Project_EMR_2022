@@ -2,6 +2,7 @@ package br.com.entra21.emr.backend.login.area.emr.crud;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -148,10 +149,14 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		
 		System.out.println("Enter the doctor's gender:");
 		doctor.setGenre(getInput().next());
-		
-		System.out.println("Enter doctor's date of birth in yyyy-mm-dd format");
-		LocalDate birthDate = LocalDate.parse(getInput().next());
-		doctor.setBirth(birthDate);
+		try {
+			
+			System.out.println("Enter doctor's date of birth in yyyy-mm-dd format");
+			LocalDate birthDate = LocalDate.parse(getInput().next());
+			doctor.setBirth(birthDate);
+		}catch(DateTimeParseException e) {
+			System.out.println("your date is incorrect that's why it gave this error: "+e.getMessage());
+		}
 		
 		System.out.println("Enter the doctor's medical specialty:");
 		doctor.setSpecialty(getInput().nextLine());
@@ -185,11 +190,16 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		
 		System.out.println("Enter the doctor's gender:");
 		doctor.setGenre(getInput().next());
-		
-		System.out.println("Enter your date of birth in yyyy-mm-dd format");
-		LocalDate birthDate = LocalDate.parse(getInput().next());
-		doctor.setBirth(birthDate);
-		
+		try {
+			System.out.println("Enter your date of birth in yyyy-mm-dd format");
+			LocalDate birthDate = LocalDate.parse(getInput().next());
+			doctor.setBirth(birthDate);
+			
+			
+		}catch(DateTimeParseException e) {
+			System.out.println("your date is incorrect that's why it gave this error: "+e.getMessage());
+			
+		}
 		System.out.println("Enter the doctor's medical specialty:");
 		doctor.setSpecialty(getInput().nextLine());
 
