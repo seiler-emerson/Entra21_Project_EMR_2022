@@ -26,9 +26,9 @@ public class Repository {
 	
 	//DOCTORS
 	public static void generateDataDoctors() {
-		doctors.put("745.468.345-84", new Doctor("Lizabel Balta", "745.468.345-84", "Carla Balta", "Clovis Balta", "Rua Conselheiro, 3476, Rocio Pequeno", "female", LocalDate.of(1986, 9, 14), "Obstetra", "9836745-9"));
-		doctors.put("145.345.345-34", new Doctor("Rafael da Silva", "145.345.345-34", "Julia Silva", "Carlos da Silva", "Rua Barao", "male", LocalDate.of(1975, 3, 30), "Clinico Geral", "123456-9"));
-		doctors.put("343.335.329-81", new Doctor("Carlos Francesconi", "343.335.329-81", "Elisandra Francesconi", "Mateus Francesconi", "Rua Irati", "male", LocalDate.of(1965, 3, 13), "Cardiologista", "32455-9"));
+		doctors.put("745.468.345-84", new Doctor("Lizabel Balta", "745.468.345-84", "Carla Balta", "Clovis Balta", "Rua Conselheiro, 3476, Rocio Pequeno", "female", LocalDate.of(1986, 9, 14), "Obstetra", "9836745-9", "123456"));
+		doctors.put("145.345.345-34", new Doctor("Rafael da Silva", "145.345.345-34", "Julia Silva", "Carlos da Silva", "Rua Barao", "male", LocalDate.of(1975, 3, 30), "Clinico Geral", "123456-9", "123456"));
+		doctors.put("343.335.329-81", new Doctor("Carlos Francesconi", "343.335.329-81", "Elisandra Francesconi", "Mateus Francesconi", "Rua Irati", "male", LocalDate.of(1965, 3, 13), "Cardiologista", "32455-9", "123456"));
 	}
 	
 	//APPOINTMENTS

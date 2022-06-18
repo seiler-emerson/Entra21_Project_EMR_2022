@@ -28,9 +28,12 @@ public class Menu {
 			if (options != null && !options.isEmpty()) {
 				for (int count = 0; count < options.size(); count++) {
 					System.out.println(" " + (count + 1) + " = " + options.get(count));
+					
 				}
+                System.out.printf("\n***** User successfully logged in. *****\n");
+
 			} else {
-				System.out.println("Where are the items on this menu?");
+				System.out.printf("Where are the items on this menu?");
 			}
 			System.out.println("========================================================");
 			System.out.println("Select an option:");

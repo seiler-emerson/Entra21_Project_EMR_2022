@@ -15,28 +15,28 @@ public class Main {
 		// Repository.generateDataBase();
 
 		try {
-			byte option;
+			String option;
 			do {
 				System.out.println(displayMenu());
 
 				Repository.generateDataBase(); // metodo gerador de dados
 
-				option = input.nextByte();
+				option = input.next();
 
 				switch (option) {
-				case 0:
+				case "0":
 					System.out.println("Exiting...");
 					break;
-				case 1:
+				case "1":
 					Login.access();
 					break;
-				case 2:
+				case "2":
 					// METODO DE CADASTRO DE NOVOS USUARIOS
 					break;
-				case 3:
+				case "3":
 					// METODO DE RECUPERACAO DE SENHA
 					break;
-				case 4:
+				case "4":
 					Principal.viewAboutInfo();
 					break;
 				default:
@@ -44,7 +44,7 @@ public class Main {
 					break;
 				}
 
-			} while (option != 0);
+			} while (option != "0");
 			System.out.println("Thanks! ");
 
 		} catch (InputMismatchException e) {

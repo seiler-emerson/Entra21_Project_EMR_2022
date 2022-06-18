@@ -10,8 +10,8 @@ public class Doctor extends Person{
 		super();
 	}
 	
-	public Doctor(String name, String cpf, String nameMother, String nameFather, String address, String genre, LocalDate birth, String specialty, String medicalLicense) {
-		super(name, cpf, nameMother, nameFather, address, genre, birth);
+	public Doctor(String name, String cpf, String nameMother, String nameFather, String address, String genre, LocalDate birth, String specialty, String medicalLicense, String password) {
+		super(name, cpf, nameMother, nameFather, address, genre, birth, password);
 		this.specialty = specialty;
 		this.medicalLicense = medicalLicense;
 	}

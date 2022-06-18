@@ -5,34 +5,39 @@ import java.util.Scanner;
 
 import br.com.entra21.emr.backend.anottations.Description;
 import br.com.entra21.emr.backend.anottations.Implemented;
-import br.com.entra21.emr.backend.models.Patient;
+import br.com.entra21.emr.backend.models.Doctor;
 
 public class Login {
 	
 	@Implemented
 	@Description(value = "Scans the HashMap of patients and lists it.")
-	public static void list(HashMap<String, Patient> patients) {
+	public static void list(HashMap<String, Doctor> doctors) {
 		
 	}
 	
 	public static void access() {
-		HashMap<String, Patient> patients = Repository.patients;
+		HashMap<String, Doctor> doctors = Repository.doctors;
 		
-		list(patients);
+		list(doctors);
 		
 		try (Scanner input = new Scanner(System.in)) {
-			System.out.println("Senha Padrão: 123");
-            System.out.print(" Enter CPF => ");
+			System.out.println("Senha Padrão: 123456");
+            System.out.print("Login: ");
             String userName = input.nextLine();
 
-            System.out.print(" Enter password => ");
+            System.out.print("Password: ");
             String password = input.nextLine();
 
-            if (patients.get(userName).getCpf().equals(userName) && patients.get(userName).getPassword().equals(password)) {
+            if (doctors.get(userName).getCpf().equals(userName) && doctors.get(userName).getPassword().equals(password)) {
                 Principal.menu();
             } else {
-                System.out.println(" Usuário Inválido ");
+                System.out.printf("\n ***** Senha inválida. *****\n", password);
+                
+                access();
+                
             }
+            
+            
         }
 
 	}
