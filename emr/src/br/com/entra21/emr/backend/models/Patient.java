@@ -13,8 +13,8 @@ public class Patient extends Person {
 	}
 	
 	public Patient(String name, String cpf, String nameMother, String nameFather, String address, String genre,
-			LocalDate birth) {
-		super(name, cpf, nameMother, nameFather, address, genre, birth);
+			LocalDate birth, String password) {
+		super(name, cpf, nameMother, nameFather, address, genre, birth, password);
 		// TODO Auto-generated constructor stub
 		setAppointments(new LinkedList<>());
 	}

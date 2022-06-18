@@ -11,14 +11,16 @@ public class Person {
 	private String address;
 	private String genre;
 	private LocalDate birth;
+	private String password;
 
-	public Person() {
+	public Person(String name2, String cpf2, String nameMother2, String nameFather2, String address2,
+			String genre2, LocalDate birth2) {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
 	public Person(String name, String cpf, String nameMother, String nameFather, String address, String genre,
-			LocalDate birth) {
+			LocalDate birth, String password) {
 		super();
 		this.name = name;
 		this.cpf = cpf;
@@ -27,6 +29,12 @@ public class Person {
 		this.address = address;
 		this.genre = genre;
 		this.birth = birth;
+		this.password = password;
+		
+	}
+
+	public Person() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getName() {
@@ -84,5 +92,15 @@ public class Person {
 	public void setBirth(LocalDate birth) {
 		this.birth = birth;
 	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	
 
 }

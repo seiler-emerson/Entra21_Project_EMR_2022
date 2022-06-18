@@ -28,8 +28,7 @@ public class Main {
 					System.out.println("Exiting...");
 					break;
 				case 1:
-					Principal.login();
-
+					Login.access();
 					break;
 				case 2:
 					// METODO DE CADASTRO DE NOVOS USUARIOS
@@ -50,9 +49,6 @@ public class Main {
 
 		} catch (InputMismatchException e) {
 			System.out.println("Escolha uma opção valida");
-			
-			
-		
 		}
 
 	}

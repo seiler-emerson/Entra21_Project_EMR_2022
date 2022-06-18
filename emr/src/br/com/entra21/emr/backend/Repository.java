@@ -17,11 +17,11 @@ public class Repository {
 	
 	//PATIENTS
 	public static void generateDataPatients() {
-		patients.put("001", new Patient("Sheldon Cooper", "001", "Mary Cooper", "George Cooper", "Av Los Robles Avenue, 2311 Pasadena", "m", LocalDate.of(1980, 2, 26)));		
-		patients.put("002", new Patient("Joana da Silva", "002", "Julia Garcia", "Joao da Silca", "Rua 456, Decimal, Numerais", "f", LocalDate.of(1985, 6, 13)));
-		patients.put("003", new Patient("Cleber Silveira", "003", "Carla Silva Garcia", "Olindio Silveira", "Rua 456", "m", LocalDate.of(1995, 4, 13)));
-		patients.put("004", new Patient("Silvana Github", "004", "Olivia Github", "Linus Github", "Rua Versionamento, Git, Online", "f", LocalDate.of(2003, 10, 6)));
-		patients.put("005", new Patient("Joao da Silva", "005", "Maria da Silva", "Jose da Silva", "Rua 123, Centro, Numerais", "m", LocalDate.of(1945, 2, 1)));
+		patients.put("001", new Patient("cheldon Cooper", "001", "Mary Cooper", "George Cooper", "Av Los Robles Avenue, 2311 Pasadena", "m", LocalDate.of(1980, 2, 26), "123"));		
+		patients.put("002", new Patient("Joana da Silva", "002", "Julia Garcia", "Joao da Silca", "Rua 456, Decimal, Numerais", "f", LocalDate.of(1985, 6, 13), "123"));
+		patients.put("003", new Patient("Cleber Silveira", "003", "Carla Silva Garcia", "Olindio Silveira", "Rua 456", "m", LocalDate.of(1995, 4, 13), "123"));
+		patients.put("004", new Patient("Silvana Github", "004", "Olivia Github", "Linus Github", "Rua Versionamento, Git, Online", "f", LocalDate.of(2003, 10, 6), "123"));
+		patients.put("005", new Patient("Joao da Silva", "005", "Maria da Silva", "Jose da Silva", "Rua 123, Centro, Numerais", "m", LocalDate.of(1945, 2, 1), "123"));
 	}
 	
 	//DOCTORS
