@@ -3,7 +3,6 @@ package br.com.entra21.emr.backend.models;
 import java.time.LocalDate;
 
 public class Person {
-
 	private String name;
 	private String cpf;
 	private String nameMother;
@@ -11,16 +10,13 @@ public class Person {
 	private String address;
 	private String genre;
 	private LocalDate birth;
-	private String password;
-
-	public Person(String name2, String cpf2, String nameMother2, String nameFather2, String address2,
-			String genre2, LocalDate birth2) {
+	
+	public Person() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Person(String name, String cpf, String nameMother, String nameFather, String address, String genre,
-			LocalDate birth, String password) {
+			LocalDate birth) {
 		super();
 		this.name = name;
 		this.cpf = cpf;
@@ -29,12 +25,6 @@ public class Person {
 		this.address = address;
 		this.genre = genre;
 		this.birth = birth;
-		this.password = password;
-		
-	}
-
-	public Person() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getName() {
@@ -92,15 +82,17 @@ public class Person {
 	public void setBirth(LocalDate birth) {
 		this.birth = birth;
 	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
+	
+	public static void createMessage() { 
+		System.out.println("The registration was successful!");
 	}
 	
+	public static void editMessage() {	//TODO - Polimorfismo - Apenas aproveitar os metodos
+		System.out.println("The selected was successful!");
+	}
 	
-
+	public static void deleteMessage() {
+		System.out.println("The selected was successfully deleted!");
+	}
+	
 }
