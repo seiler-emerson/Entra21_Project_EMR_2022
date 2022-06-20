@@ -171,7 +171,6 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		doctor.setName(getInput().nextLine());
 		System.out.println("Enter the name of the doctor's mother:");
 		doctor.setNameMother(getInput().nextLine());
-		doctor.setNameMother(getInput().nextLine());
 		System.out.println("Enter the name of the doctor's father:");
 		doctor.setNameFather(getInput().nextLine());
 		System.out.println("Enter the doctor's address:");
@@ -182,6 +181,7 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		LocalDate birthDate = LocalDate.parse(getInput().next());
 		doctor.setBirth(birthDate);
 		System.out.println("Enter the doctor's medical specialty:");
+		doctor.setSpecialty(getInput().nextLine());
 		doctor.setSpecialty(getInput().nextLine());
 		System.out.println("Enter the doctor's medical license:");
 		doctor.setMedicalLicense(getInput().nextLine());
@@ -201,7 +201,6 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		list(doctors);
 		System.out.println("Select a doctor for CPF: ");
 		String option = getInput().next();
-		System.out.println(option);
 		System.out.println("Full name: "+doctors.get(option).getName());
 		System.out.println("CPF: "+doctors.get(option).getCpf());
 		System.out.println("Mother name: "+doctors.get(option).getNameMother());

@@ -203,7 +203,6 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 		list(patients);
 		System.out.println("Select a patient for CPF: ");
 		String option = getInput().next();
-		System.out.println(option);
 		
 		System.out.println("Full name: "+patients.get(option).getName());
 		System.out.println("CPF: "+patients.get(option).getCpf());

@@ -49,7 +49,7 @@ public class Main {
 	private static String displayMenu() {
 		
 		if(options==null) {
-			options = new ArrayList<>(Arrays.asList("Login","Record User","I forgot my password","About"));
+			options = new ArrayList<>(Arrays.asList("Login","Create User","I forgot my password","About"));
 		}
 		
  

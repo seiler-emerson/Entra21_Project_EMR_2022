@@ -1,20 +1,22 @@
 
 ## Project EMR - Electronic Medical Record
 
-## :scroll: Table of Contents
+## 🗃️&nbsp; Table of Contents
 
-* [About the project](#computer-About-the-project)
-* [Application flowchart](#gear-Application-flowchart)
-* [Class diagram](#Class-diagram)
-* [Instructions for execute the Project](#interrobang-Instructions-for-execute-the-Project)
-* [Technologies and Concepts](#hammer_and_wrench-Technologies-and-Concepts)  
-* [Authors](#student-Authors)
+* [About the project](#about-project)
+* [Class diagram](#class-diagram)
+* [Application flowchart](#application-flowchart)
+* [Application in operation](#application-operation)
+* [Instructions for execute the Project](#execute-project)
+* [Technologies and Concepts](#technologies)  
+* [Authors](#authors)
 
 </br>
 
 ---
 
-## :computer: About the project 
+
+## 🏥&nbsp; About the project <a name="about-project"></a>
 
 It is a system used to manage the attendance of a clinic. It has functionalities to manage patients with their respective medical records, which in turn store their medical consultation.
 
@@ -22,40 +24,56 @@ It is a system used to manage the attendance of a clinic. It has functionalities
 
 ---
 
-## :gear: Application flowchart 
-
-The system flow is based on the concept:
-- Patient ➡️ Medical Record ➡️ medical consultation 
-
-![Flowchart](./image/emr_fluxo.png)
-
-</br>
-
-----
-
-## Class Diagram
+## 📈&nbsp;Class Diagram <a name="class-diagram"></a>
  
 ![Diagram](./image/emr_diagrama.png)
 
 </br>
 
 ----
+## 🔀&nbsp; Application flowchart <a name="application-flowchart"></a>
 
-## :interrobang: Instructions for execute the Project
+The system flow is based on the concept:
+- Patient ➡️ Medical Record ➡️ medical consultation 
+
+<details>
+    <summary><b>👈🏽 &nbsp; Click here to expand the flowchart </b></summary>
+
+![Flowchart](./image/emr_fluxo.png)
+
+</details>
+
+</br>
+
+----
+
+## ▶️&nbsp; Application in operation <a name="application-operation"></a>
+
+  | Functionality  | View Here |
+  |------|---------|
+  |🏥&nbsp; Menu Principal|[<div align="center">▶️</div>](./readmes/main.md)|
+  |👨🏻‍💻&nbsp; User CRUD|[<div align="center">▶️</div>](./readmes/user.md)
+  |😷&nbsp; Patient CRUD|[<div align="center">▶️</div>](./readmes/patient.md)
+  |👩‍🔬&nbsp; Doctor CRUD|[<div align="center">▶️</div>](./readmes/doctor.md)
+  |🩺&nbsp; Appointment CRUD|[<div align="center">▶️</div>](./readmes/appointment.md)
+  |📊&nbsp; Reports|[<div align="center">▶️</div>](./readmes/reports.md)
+  <br />
+
+## 👨🏽‍🏫&nbsp; Instructions for execute the Project <a name="execute-project"></a>
 
 1. Make a project copy to your machine:
     - git clone https://github.com/seiler-emerson/Entra21_Project_EMR_2022.git
     -Or a direct download from the page [HERE](https://github.com/seiler-emerson/Entra21_Project_EMR_2022).
     - Import the project into your IDE and execute the application.
         - Tutorial how to import a project in the Eclipse IDE [HERE](https://www.youtube.com/watch?v=R-8OF9ipeT8).
-2. Run via replica
+2. Run with REPLIT
     - ICON WITH LINK
 
 </br>
 
 ---
 
-## :hammer_and_wrench: Technologies and Concepts
+## 📚&nbsp; Technologies and Concepts <a name="technologies"></a>
 
 In this project we use JAVA language and apply the following concepts:
 
@@ -87,7 +105,7 @@ In this project we use JAVA language and apply the following concepts:
 </details>
 
 <details>	
-  <summary><b>🗃️&nbsp; Object orientation</b></summary>
+  <summary><b>🗃️&nbsp; Object Oriented Programming</b></summary>
   
 1. Classes
     - class diagram
@@ -131,43 +149,47 @@ In this project we use JAVA language and apply the following concepts:
 
 ---
 
-## :student: Authors
+## 👨🏻‍🎓👩‍🎓👨🏼‍🎓&nbsp; Authors <a name="authors"></a>
 
 <br>
 
+<table>
+<thead>
+	<tr>
+	    <th>
+            <img style="border-radius: 10px;" src="https://avatars.githubusercontent.com/Ba-Ribeiro" width="100px;" alt=""/>
+        </th>
+		<th>
+            <a href="https://seiler-emerson.github.io/">
+                <img style="border-radius: 10px" src="https://avatars.githubusercontent.com/seiler-emerson" width="100px;" alt=""/>
+            </a>
+        </th>
+		<th>
+            <img style="border-radius: 10px;" src="https://avatars.githubusercontent.com/Wellitonborges" width="100px;" alt=""/>
+        </th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+        <td>
+            <a href="https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/">
+                <img src="https://img.shields.io/badge/-barbararibeiro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/" width="100px;" alt=""/>
+            </a>
+        </td>
+		<td>
+            <a href="https://www.linkedin.com/in/seileremerson/">
+                <img src="https://img.shields.io/badge/-seileremerson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/seileremerson/" width="100px;" alt=""/>
+            </a>
+        </td>
+		<td>
+            <a href="https://www.linkedin.com/in/welliton-borges-904331190/">
+                <img src="https://img.shields.io/badge/-wellitonborges-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/welliton-borges-904331190/" width="100px;" alt=""/>
+            </a>
+        </td>
+	</tr>
+</tbody>
+</table>
 
-
-<div style="display:flex;">
-    <div style="margin-right:30px;">
-        <a href="https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/">
-        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/Ba-Ribeiro" width="100px;" alt=""/>
-        <br />
-        <sub><b>Bárbara Ribeiro</b></sub></a> <a href="https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/" title="Bárbara Ribeiro"></a>
-        <br />
-
-[![Linkedin Badge](https://img.shields.io/badge/-barbararibeiro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/)](https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/)
-    </div>
-
-<div style="margin-right:30px;">
-    <a href="https://www.linkedin.com/in/seileremerson/">
-    <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/seiler-emerson" width="100px;" alt=""/>
-    <br />
-    <sub><b>Emerson Seiler</b></sub></a> <a href="https://www.linkedin.com/in/seileremerson/" title="Emerson Seiler"></a>
-    <br />
-
-[![Linkedin Badge](https://img.shields.io/badge/-seileremerson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/seileremerson/)](https://www.linkedin.com/in/seileremerson/)
-    </div>
-
-<div>
-    <a href="https://www.linkedin.com/in/welliton-borges-904331190/">
-    <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/Wellitonborges" width="100px;" alt=""/>
-    <br />
-    <sub><b>Welliton Borges</b></sub></a> <a href="https://www.linkedin.com/in/welliton-borges-904331190/" title="Welliton Borges"></a>
-    <br />
-
-[![Linkedin Badge](https://img.shields.io/badge/-wellitonborges-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/welliton-borges-904331190/)](https://www.linkedin.com/in/welliton-borges-904331190/)
-    </div>
-</div>
 <br>
 
 ---

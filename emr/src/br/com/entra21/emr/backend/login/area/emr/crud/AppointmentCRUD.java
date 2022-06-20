@@ -143,6 +143,8 @@ public class AppointmentCRUD extends Menu {	//TODO - Extends
 		newAppointment.setDoctor(captureDoctor());
 		newAppointment.setDate(LocalDate.now());	//TODO - Dates
 		newAppointment.setHour(LocalTime.now());
+		System.out.println("Describe the patient's anamnesi:");
+		newAppointment.setAnamnesis(getInput().nextLine());
 		newAppointment.setAnamnesis(getInput().nextLine());
 		newAppointment.setPrescription(prescription());
 		newAppointment.setCertificate(certificate());
