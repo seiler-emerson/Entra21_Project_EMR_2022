@@ -39,7 +39,7 @@ The system flow is based on the concept:
 <details>
     <summary><b>👈🏽 &nbsp; Click here to expand the flowchart </b></summary>
 
-![Flowchart](./image/emr_fluxo.png)
+![Flowchart](./image/fluxo_emr.png)
 
 </details>
 
