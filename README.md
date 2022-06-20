@@ -63,7 +63,7 @@ The system flow is based on the concept:
 
 1. Make a project copy to your machine:
     - git clone https://github.com/seiler-emerson/Entra21_Project_EMR_2022.git
-    -Or a direct download from the page [HERE](https://github.com/seiler-emerson/Entra21_Project_EMR_2022).
+    - Or a direct download from the page [HERE](https://github.com/seiler-emerson/Entra21_Project_EMR_2022).
     - Import the project into your IDE and execute the application.
         - Tutorial how to import a project in the Eclipse IDE [HERE](https://www.youtube.com/watch?v=R-8OF9ipeT8).
 2. Run with REPLIT
