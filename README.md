@@ -67,7 +67,7 @@ The system flow is based on the concept:
     - Import the project into your IDE and execute the application.
         - Tutorial how to import a project in the Eclipse IDE [HERE](https://www.youtube.com/watch?v=R-8OF9ipeT8).
 2. Run with REPLIT
-    - ICON WITH LINK
+    - (Not implemented))
 
 </br>
 
