@@ -100,7 +100,7 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 		} else {
 			patients.put(key.getCpf(), editValues(key.getCpf(), patients.get(key.getCpf()).getAppointments()));
 			System.out.println("Updated data...");
-			Patient.editMessage(); //TODO - Polimorfismo - Apenas aproveitar os metodos
+			Patient.editMessage(); //TODO - 02 - POO - Polimorfismo - Apenas aproveitar os metodos
 		}
 	}
 
@@ -238,7 +238,7 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 		} 
 	}
 
-	public LocalDate captureDate() { //TODO - Exception
+	public LocalDate captureDate() { //TODO - 03 - Java Avancado - Exceptions
 		LocalDate birthDate = null;
 		try {
 			birthDate = LocalDate.parse(getInput().next());

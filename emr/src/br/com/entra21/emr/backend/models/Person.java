@@ -87,7 +87,7 @@ public class Person {
 		System.out.println("The registration was successful!");
 	}
 	
-	public static void editMessage() {	//TODO - Polimorfismo - Apenas aproveitar os metodos
+	public static void editMessage() {	//TODO - 02 - POO - Polimorfismo - Apenas aproveitar os metodos
 		System.out.println("The selected was successful!");
 	}
 	

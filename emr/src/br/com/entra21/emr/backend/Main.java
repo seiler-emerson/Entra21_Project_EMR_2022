@@ -15,12 +15,12 @@ public class Main {
 		do {
 			System.out.println(displayMenu());
 			
-			//metode generate Database //TODO - Comentarios
+			//metode generate Database //TODO - 01 - Logica - Comentarios
 			Repository.generateDataBase();  
 			
 			option = input.next();
 
-			switch (option) {	//TODO - switch
+			switch (option) {	//TODO - 01 - Logica - switch
 			case "0":
 				System.out.println("Exiting...");
 				break;

@@ -4,12 +4,12 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Appointment {
-	private String anamnesis;	//TODO - Atributos
+	private String anamnesis;	//TODO - 02 - POO - Atributos
 	private String prescription;
 	private String certificate;
 	private String forwarding;
 	private String medicalRelease;
-	private LocalDate date;	//TODO - Dates
+	private LocalDate date;	//TODO - 03 - Java Avancado - Dates
 	private LocalTime hour;
 	private Doctor doctor;
 	
@@ -17,7 +17,7 @@ public class Appointment {
 		super();
 	}
 	
-	public Appointment(String anamnesis, String prescription, String certificate, String forwarding, //TODO - Construtores
+	public Appointment(String anamnesis, String prescription, String certificate, String forwarding, //TODO - 02 - POO - Construtores
 			String medicalRelease, LocalDate date, LocalTime hour, Doctor doctor) {
 		super();
 		this.anamnesis = anamnesis;
@@ -94,7 +94,7 @@ public class Appointment {
 		this.doctor = doctor;
 	}
 
-	public static void createMessage(String name) {	//TODO - Metodos especificos
+	public static void createMessage(String name) {	//TODO - 02 - POO - Metodos especificos
 		System.out.println("The appointment registration "+name+" was successful!");
 	}
 	

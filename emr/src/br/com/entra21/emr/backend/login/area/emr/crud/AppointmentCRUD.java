@@ -1,4 +1,4 @@
-package br.com.entra21.emr.backend.login.area.emr.crud;
+package br.com.entra21.emr.backend.login.area.emr.crud;  //TODO - 01 - Logica - Packages / sub-packages
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -15,12 +15,12 @@ import br.com.entra21.emr.backend.models.Appointment;
 import br.com.entra21.emr.backend.models.Doctor;
 import br.com.entra21.emr.backend.models.Patient;
 
-public class AppointmentCRUD extends Menu {	//TODO - Extends
+public class AppointmentCRUD extends Menu {	//TODO - 02 - POO - Extends
 	
 	private HashMap<String, Patient> patients = Repository.patients;
 	public static HashMap<String, Doctor> doctors = Repository.doctors;
 	
-	private static ArrayList<String> options = new ArrayList<String>(	//TODO - ArrayList
+	private static ArrayList<String> options = new ArrayList<String>(	//TODO - 03 - Java Avancado - ArrayList
 			Arrays.asList("Create Appointment", "List Appointment", "Update Appointment", "Delete Appointment", "Details Appointment"));
 	
 	public AppointmentCRUD() {
@@ -54,13 +54,13 @@ public class AppointmentCRUD extends Menu {	//TODO - Extends
 	}
 	
 	@Implemented
-	public void listAppointments(HashMap<String, Patient> patients) {
+	public void listAppointments(HashMap<String, Patient> patients) {	//TODO - 01 - Logica - Nomenclatura
 		System.out.println("========================================================");
 		System.out.println("APPOINTMENTS LIST");
 		
 		byte totalAppointments = 0;
 		System.out.println("\tNo -    Date   -  Hour - Patient Name - CPF");
-		for (Patient patient : patients.values()) {	//TODO - for
+		for (Patient patient : patients.values()) {	//TODO - 01 - Logica - for
 			for(byte count=0;count<patient.getAppointments().size();count++) {
 				System.out.println("\t"+count+" - "+patient.getAppointments().get(count).getDate()+" - "+ patient.getAppointments().get(count).getHour().format(DateTimeFormatter.ofPattern("HH:mm"))+" - "+patient.getName()+" - "+patient.getCpf() );
 				totalAppointments+=1;
@@ -81,7 +81,7 @@ public class AppointmentCRUD extends Menu {	//TODO - Extends
 	
 	@Implemented
 	public void create(HashMap<String, Patient> patients) {
-		listPatients(patients);	//TODO - Recursividade
+		listPatients(patients);	//TODO - 01 - Logica - Recursividade
 		System.out.println("Select the patient CPF:");
 		String key = getInput().next();
 		System.out.println("You selected the patient "+patients.get(key).getName());
@@ -139,9 +139,9 @@ public class AppointmentCRUD extends Menu {	//TODO - Extends
 	}
 	
 	public void captureValues(Appointment newAppointment) {
-		//TODO - Encapsulamento
+		//TODO - 02 - POO - Encapsulamento
 		newAppointment.setDoctor(captureDoctor());
-		newAppointment.setDate(LocalDate.now());	//TODO - Dates
+		newAppointment.setDate(LocalDate.now());	//TODO - 03 - Java Avancado - Dates
 		newAppointment.setHour(LocalTime.now());
 		System.out.println("Describe the patient's anamnesi:");
 		newAppointment.setAnamnesis(getInput().nextLine());
@@ -159,7 +159,7 @@ public class AppointmentCRUD extends Menu {	//TODO - Extends
 		System.out.println("2 - NO");
 		byte option = getInput().nextByte();
 		String prescription = null;
-		final byte OPTION_ONE = 1;	//TODO - CONSTANTE
+		final byte OPTION_ONE = 1;	//TODO - 01 - Logica - CONSTANTE
 		final byte OPTION_TWO = 2;  
 		if(option == OPTION_ONE) {
 			System.out.println("Report Medical prescription:");
@@ -181,7 +181,7 @@ public class AppointmentCRUD extends Menu {	//TODO - Extends
 		System.out.println("2 - NO");
 		byte option = getInput().nextByte();
 		String certificate = null;
-		final byte OPTION_ONE = 1;	//TODO - CONSTANTE
+		final byte OPTION_ONE = 1;	//TODO - 01 - Logica - CONSTANTE
 		final byte OPTION_TWO = 2; 
 		if(option == OPTION_ONE) {
 			System.out.println("Report the certificate:");
@@ -203,7 +203,7 @@ public class AppointmentCRUD extends Menu {	//TODO - Extends
 		System.out.println("2 - NO");
 		byte option = getInput().nextByte();
 		String forwarding = null;
-		final byte OPTION_ONE = 1;	//TODO - CONSTANTE
+		final byte OPTION_ONE = 1;	//TODO - 01 - Logica - CONSTANTE
 		final byte OPTION_TWO = 2; 
 		if(option == OPTION_ONE) {
 			System.out.println("Report the forwarding:");

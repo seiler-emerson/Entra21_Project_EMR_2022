@@ -58,7 +58,7 @@ public class LoginCRUD extends Menu implements ICrud<User> {
 	public void list(HashMap<String, User> list) {
 		System.out.println("========================================================");
 		System.out.println("USERS LIST");
-		list.forEach((key,value) -> System.out.println("\t"+key));	//TODO - Funcoes Lambda
+		list.forEach((key,value) -> System.out.println("\t"+key));	//TODO - 03 - Java Avancado - Funcoes Lambda
 		System.out.println("\nUSERS TOTAL: " + users.size() + " users.");	
 	}
 
@@ -131,7 +131,7 @@ public class LoginCRUD extends Menu implements ICrud<User> {
 			System.out.println("Password must consist only of numbers.");
 			System.out.println("Enter the password:");
 			String password = getInput().next();
-			user.setPassword(Integer.parseInt(password)); //TODO - Wrapper
+			user.setPassword(Integer.parseInt(password)); //TODO - 03 - Java Avancado - Wrapper
 		} catch (NumberFormatException e) {
 			System.out.println("Please, digit only numbers. Try again!");
 			create();

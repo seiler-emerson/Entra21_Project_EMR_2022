@@ -15,7 +15,7 @@ import br.com.entra21.emr.backend.anottations.Description;
 import br.com.entra21.emr.backend.models.Doctor;
 import br.com.entra21.emr.backend.models.Patient;
 
-//TODO - Implements
+//TODO - 02 - POO - Implements
 public class DoctorCRUD extends Menu implements ICrud<Doctor> {	
 
 	private HashMap<String, Doctor> doctors = Repository.doctors;
@@ -246,7 +246,7 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		} catch (DateTimeParseException e) {
 			System.out.println("Insert a valid format for date!");
 			System.out.println("Enter doctor's date of birth in yyyy-mm-dd format");
-			captureDate();
+			captureDate();	//TODO - 01 - Logica - Recursividade
 		}
 		
 		return birthDate;

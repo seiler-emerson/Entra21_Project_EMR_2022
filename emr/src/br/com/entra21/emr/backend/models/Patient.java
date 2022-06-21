@@ -14,7 +14,7 @@ public class Patient extends Person {
 	public Patient(String name, String cpf, String nameMother, String nameFather, String address, String genre,
 			LocalDate birth) {
 		super(name, cpf, nameMother, nameFather, address, genre, birth);
-		setAppointments(new LinkedList<>());	//TODO - LinkedList
+		setAppointments(new LinkedList<>());	//TODO - 03 - Java Avancado - LinkedList
 	}
 
 	public Patient(LinkedList<Appointment> appointments) {

@@ -14,10 +14,10 @@ import br.com.entra21.emr.backend.models.User;
 
 public class Repository {
 
-	public static HashMap<String, Patient> patients = new HashMap<>();	//TODO - HashMap
+	public static HashMap<String, Patient> patients = new HashMap<>();	//TODO - 03 - Java Avancado - HashMap
 	public static HashMap<String, Doctor> doctors = new HashMap<>();
 	public static HashMap<String, User> users = new HashMap<>();
-	public static HashSet<String> states = new HashSet<String>();	//TODO - HashSet
+	public static HashSet<String> states = new HashSet<String>();	//TODO - 03 - Java Avancado - HashSet
 	
 	
 	//PATIENTS
@@ -38,7 +38,7 @@ public class Repository {
 	
 	//APPOINTMENTS
 	public static void generateDataAppointments() {
-		//TODO - Instanciar objetos
+		//TODO - 02 - POO - Instanciar objetos
 		patients.get("036.869.260-40").appointments.add(new Appointment("Dor abdominal", "laxante - 8/8h - 1 dia ", "Atestado", "encaminhamento para gastro", "Liberado", LocalDate.of(2022, 2, 1), LocalTime.of(20, 10), doctors.get("145.345.345-34")));
 		patients.get("036.869.260-40").appointments.add(new Appointment("Dor de cabeca", "paracetamol - 8/8h - se dor ", "Declaracao de comparecimento", "encaminhamento para neuro", "Liberado", LocalDate.of(2021, 12, 11), LocalTime.of(22, 06), doctors.get("343.335.329-81")));
 		patients.get("502.680.680-54").appointments.add(new Appointment("Dor abdominal", "laxante - 8/8h - 1 dia ", "Atestado", "encaminhamento para gastro", "Liberado", LocalDate.of(2012, 2, 1), LocalTime.of(15, 19), doctors.get("745.468.345-84")));

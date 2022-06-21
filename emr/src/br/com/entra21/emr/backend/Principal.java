@@ -21,7 +21,7 @@ public class Principal {
 	
 	public static void login() {	
 		byte countTry=1;
-		while(!captureLogin() && countTry<4) {	//TODO - while
+		while(!captureLogin() && countTry<4) {	//TODO - 01 - Logica - while
 			if(countTry==3) {
 				System.out.println("You failed to login 3 times. Exiting...");
 				System.exit(0);
@@ -32,7 +32,7 @@ public class Principal {
 		}
 	}
 
-	@Implemented //TODO - Annotation
+	@Implemented //TODO - 03 - Java Avancado - Annotation
 	public static void record() {
 		new LoginCRUD().playMenu();
 	}
@@ -55,20 +55,20 @@ public class Principal {
 	
 	@Implemented
 	@Description(value = "Validation login, for 3 wrong attempts the system shuts down..")
-	public static boolean captureLogin() {	// TODO - Metodo com retorno
+	public static boolean captureLogin() {	// TODO - 01 - Logica - Metodo com retorno
 		boolean validLogin = false;
-		try {	//TODO - Exceptions
+		try {	//TODO - 03 - Java Avancado - Exceptions
 			System.out.println("Please insert your login: ");
 			String login = input.next();
 			System.out.println("Please insert your password: ");
-			String passwordString = input.next(); //TODO - Variaveis
+			String passwordString = input.next(); //TODO - 01 - Logica - Variaveis
 			
-			try {	//TODO - Exeptions
-				Integer password = Integer.parseInt(passwordString);	//TODO - Wrapper
-				if(login.equals(users.get(login).getUser()) && password.equals(users.get(login).getPassword())) {	//TODO - if
+			try {	//TODO - 03 - Java Avancado - Exceptions
+				Integer password = Integer.parseInt(passwordString);	//TODO - 03 - Java Avancado - Wrapper
+				if(login.equals(users.get(login).getUser()) && password.equals(users.get(login).getPassword())) {	//TODO - 01 - Logica - if
 					mountMenu(users.get(login).getTypeUser());
 					validLogin = true;
-				} else {	//TODO - else
+				} else {	//TODO - 01 - Logica - else
 					validLogin = false;
 				}
 			} catch (NumberFormatException e) {
@@ -81,10 +81,10 @@ public class Principal {
 		return validLogin;
 	}
 	
-	public static void mountMenu(Enum<TypeUser> userEnum) {	//TODO - Metodo com parametro
+	public static void mountMenu(Enum<TypeUser> userEnum) {	//TODO - 01 - Logica - Metodo com parametro
 		if(userEnum == TypeUser.ADMIN) {
 			new MenuPrincipal("MENU PRINCIPAL", new ArrayList<String>(Arrays.asList("Electronic Medical Record", "Reports"))).playMenu();
-		} else if (userEnum == TypeUser.DOCTOR) {	//TODO - else if
+		} else if (userEnum == TypeUser.DOCTOR) {	//TODO - 01 - Logica - else if
 			new MenuPrincipal("MENU PRINCIPAL", new ArrayList<String>(Arrays.asList("Electronic Medical Record", "Reports"))).playMenu();
 		} else if (userEnum == TypeUser.USER) {
 			new MenuReports("REPORTS", new ArrayList<String>(Arrays.asList("Number of Patients", "Number of Appointments", "List Patients", "List Doctors"))).playMenu();

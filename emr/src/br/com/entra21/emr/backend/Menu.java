@@ -17,7 +17,7 @@ public class Menu {
 	}
 
 	public void playMenu() {
-		do { // TODO - do-while
+		do { // TODO - 01 - Logica - do-while
 			System.out.println("\n========================================================");
 			System.out.println("\t\tMENU " + this.title);
 			System.out.println("-1 = Finish System");

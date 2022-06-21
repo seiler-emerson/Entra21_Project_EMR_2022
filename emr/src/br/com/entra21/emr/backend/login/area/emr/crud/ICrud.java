@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-//TODO - Generics
-//TODO - Interface
+//TODO - 02 - POO - Interface
+//TODO - 03 - Java Avancado - Generics
 
 public interface ICrud<A> {	
 	

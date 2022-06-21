@@ -11,7 +11,7 @@ public class Doctor extends Person{
 		super();
 	}
 	
-	public Doctor(String name, String cpf, String nameMother, String nameFather, String address, String genre, LocalDate birth, String specialty, String medicalLicense, String stateLicense) { //TODO - Novos construtores com base na super classe
+	public Doctor(String name, String cpf, String nameMother, String nameFather, String address, String genre, LocalDate birth, String specialty, String medicalLicense, String stateLicense) { //TODO - 02 - POO - Novos construtores com base na super classe
 		super(name, cpf, nameMother, nameFather, address, genre, birth);
 		this.specialty = specialty;
 		this.medicalLicense = medicalLicense;
@@ -52,11 +52,11 @@ public class Doctor extends Person{
 		this.stateLicense = stateLicense;
 	}
 
-	public static void createMessage(String name) {		//TODO - Polimorfismo - Sobrescrever para: Fazer de forma especifica
+	public static void createMessage(String name) {		//TODO - 02 - POO - Polimorfismo - Sobrescrever para: Fazer de forma especifica
 		System.out.println("The doctor registration "+name+" was successful!");
 	}
 	
-	public static void editMessage() {	//TODO - Polimorfismo - Fazer completamente de forma especifica
+	public static void editMessage() {	//TODO - 02 - POO - Polimorfismo - Fazer completamente de forma especifica
 		System.out.println("List for check the edition!");
 	}
 	public static void editMessage(String name) {
@@ -64,7 +64,7 @@ public class Doctor extends Person{
 	}
 	
 	
-	public static void deleteMessage(String name) {	//TODO - Polimorfismo - Sobrescrever para: Aproveitar o comportamento e fazer um complemento
+	public static void deleteMessage(String name) {	//TODO - 02 - POO - Polimorfismo - Sobrescrever para: Aproveitar o comportamento e fazer um complemento
 		deleteMessage();
 		System.out.println("Check the list to see if "+name+" was actually deleted!");
 	}
