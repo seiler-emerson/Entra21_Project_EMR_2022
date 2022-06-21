@@ -2,6 +2,7 @@ package br.com.entra21.emr.backend.login.area.emr.crud;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -145,8 +146,7 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		System.out.println("Enter the doctor's gender:");
 		doctor.setGenre(getInput().next());
 		System.out.println("Enter doctor's date of birth in yyyy-mm-dd format");
-		LocalDate birthDate = LocalDate.parse(getInput().next());
-		doctor.setBirth(birthDate);
+		doctor.setBirth(captureDate());
 		System.out.println("Enter the doctor's medical specialty:");
 		doctor.setSpecialty(getInput().nextLine());
 		doctor.setSpecialty(getInput().nextLine());
@@ -166,25 +166,33 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 	public Doctor editValues(String cpf) {
 		Doctor doctor = new Doctor();
 		doctor.setCpf(cpf);
+		
 		System.out.println("Enter the doctor's name:");
 		doctor.setName(getInput().nextLine());		
 		doctor.setName(getInput().nextLine());
+		
 		System.out.println("Enter the name of the doctor's mother:");
 		doctor.setNameMother(getInput().nextLine());
+		
 		System.out.println("Enter the name of the doctor's father:");
 		doctor.setNameFather(getInput().nextLine());
+		
 		System.out.println("Enter the doctor's address:");
 		doctor.setAddress(getInput().nextLine());
+		
 		System.out.println("Enter the doctor's gender:");
 		doctor.setGenre(getInput().next());
+		
 		System.out.println("Enter your date of birth in yyyy-mm-dd format");
-		LocalDate birthDate = LocalDate.parse(getInput().next());
-		doctor.setBirth(birthDate);
+		doctor.setBirth(captureDate());
+		
 		System.out.println("Enter the doctor's medical specialty:");
 		doctor.setSpecialty(getInput().nextLine());
 		doctor.setSpecialty(getInput().nextLine());
+		
 		System.out.println("Enter the doctor's medical license:");
 		doctor.setMedicalLicense(getInput().nextLine());
+		
 		System.out.println("Enter you state initials license. Ex: SC: ");
 		String stateLicense = getInput().nextLine();
 		if(states.contains(stateLicense)) {
@@ -201,16 +209,22 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 		list(doctors);
 		System.out.println("Select a doctor for CPF: ");
 		String option = getInput().next();
-		System.out.println("Full name: "+doctors.get(option).getName());
-		System.out.println("CPF: "+doctors.get(option).getCpf());
-		System.out.println("Mother name: "+doctors.get(option).getNameMother());
-		System.out.println("Name Father: "+doctors.get(option).getNameFather());
-		System.out.println("Adress: "+doctors.get(option).getAddress());
-		System.out.println("Genre: "+doctors.get(option).getGenre());
-		System.out.println("Birth date: "+doctors.get(option).getBirth().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-		System.out.println("Medical specialty: "+doctors.get(option).getSpecialty());
-		System.out.println("Medical license:: "+doctors.get(option).getMedicalLicense()+"-"+doctors.get(option).getStateLicense().toUpperCase());
-		appointmentsNumber(patients, option);
+		if(doctors.get(option) == null) {
+			System.out.println("Insert a CPF for list!");
+			details(doctors);
+		} else {
+		
+			System.out.println("Full name: "+doctors.get(option).getName());
+			System.out.println("CPF: "+doctors.get(option).getCpf());
+			System.out.println("Mother name: "+doctors.get(option).getNameMother());
+			System.out.println("Name Father: "+doctors.get(option).getNameFather());
+			System.out.println("Adress: "+doctors.get(option).getAddress());
+			System.out.println("Genre: "+doctors.get(option).getGenre());
+			System.out.println("Birth date: "+doctors.get(option).getBirth().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+			System.out.println("Medical specialty: "+doctors.get(option).getSpecialty());
+			System.out.println("Medical license:: "+doctors.get(option).getMedicalLicense()+"-"+doctors.get(option).getStateLicense().toUpperCase());
+			appointmentsNumber(patients, option);
+		}
 	}
 	
 	public void appointmentsNumber(HashMap<String, Patient> patients, String option) {
@@ -222,5 +236,19 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 			}
 		}
 		System.out.println("Number of appointments: "+ totalAppointments);
+	}
+	
+	public LocalDate captureDate() {
+		LocalDate birthDate = null;
+		try {
+			birthDate = LocalDate.parse(getInput().next());
+			
+		} catch (DateTimeParseException e) {
+			System.out.println("Insert a valid format for date!");
+			System.out.println("Enter doctor's date of birth in yyyy-mm-dd format");
+			captureDate();
+		}
+		
+		return birthDate;
 	}
 }

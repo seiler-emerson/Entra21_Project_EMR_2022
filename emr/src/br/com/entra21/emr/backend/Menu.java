@@ -4,25 +4,25 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Menu {
-	
-	private Scanner input ;
+
+	private Scanner input;
 	private String title;
 	private ArrayList<String> options;
-	
+
 	public Menu(String title, ArrayList<String> options) {
 		super();
-		this.input= new Scanner(System.in);
+		this.input = new Scanner(System.in);
 		this.title = title;
 		this.options = options;
 	}
-	
+
 	public void playMenu() {
-		do {	//TODO - do-while
+		do { // TODO - do-while
 			System.out.println("\n========================================================");
-			System.out.println("\t\tMENU "+this.title);
+			System.out.println("\t\tMENU " + this.title);
 			System.out.println("-1 = Finish System");
 			System.out.println(" 0 = Return");
-			
+
 			if (options != null && !options.isEmpty()) {
 				for (int count = 0; count < options.size(); count++) {
 					System.out.println(" " + (count + 1) + " = " + options.get(count));
@@ -33,10 +33,10 @@ public class Menu {
 			System.out.println("========================================================");
 			System.out.println("Select an option:");
 			System.out.println("========================================================");
-			
-		} while (captureOption() != "0");
+
+		} while (!captureOption().equals("0"));
 	}
-	
+
 	public String captureOption() {
 		String option;
 		option = input.next();
@@ -47,8 +47,8 @@ public class Menu {
 			System.out.println("Thanks for using the system");
 			System.exit(-1);
 			break;
-	case "0":
-			System.out.println("Menu "+ this.title+" closed");
+		case "0":
+			System.out.println("Menu " + this.title + " closed");
 			break;
 		}
 		return option;
@@ -61,5 +61,5 @@ public class Menu {
 	public Scanner getInput() {
 		return input;
 	}
- 
+
 }

@@ -2,6 +2,7 @@ package br.com.entra21.emr.backend.login.area.emr.crud;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -159,8 +160,7 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 		patient.setGenre(getInput().next());
 		
 		System.out.println("Enter your date of birth in yyyy-mm-dd format");
-		LocalDate birthDate = LocalDate.parse(getInput().next());
-		patient.setBirth(birthDate);
+		patient.setBirth(captureDate());
 		
 		return patient;
 	}
@@ -187,11 +187,10 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 		patient.setAddress(getInput().nextLine());
 		
 		System.out.println("Enter the patient's gender:");
-		patient.setAddress(getInput().nextLine());
+		patient.setGenre(getInput().nextLine());
 		
 		System.out.println("Enter your date of birth in yyyy-mm-dd format");
-		LocalDate birthDate = LocalDate.parse(getInput().next());
-		patient.setBirth(birthDate);
+		patient.setBirth(captureDate());
 		
 		return patient;
 	}
@@ -203,19 +202,23 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 		list(patients);
 		System.out.println("Select a patient for CPF: ");
 		String option = getInput().next();
-		
-		System.out.println("Full name: "+patients.get(option).getName());
-		System.out.println("CPF: "+patients.get(option).getCpf());
-		System.out.println("Mother name: "+patients.get(option).getNameMother());
-		System.out.println("Name Father: "+patients.get(option).getNameFather());
-		System.out.println("Adress: "+patients.get(option).getAddress());
-		System.out.println("Genre: "+patients.get(option).getGenre());
-		System.out.println("Birth date: "+patients.get(option).getBirth().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-		System.out.println("Appointment Number: "+patients.get(option).appointments.size());
-		if(patients.get(option).appointments == null) {			
-			System.out.println("The patient has no previous appointments.");			
-		} else {	
-			listAppointments(patients, option);
+		if(patients.get(option) == null) {
+			System.out.println("Insert a CPF for list!");
+			details(patients);
+		} else {
+			System.out.println("Full name: "+patients.get(option).getName());
+			System.out.println("CPF: "+patients.get(option).getCpf());
+			System.out.println("Mother name: "+patients.get(option).getNameMother());
+			System.out.println("Name Father: "+patients.get(option).getNameFather());
+			System.out.println("Adress: "+patients.get(option).getAddress());
+			System.out.println("Genre: "+patients.get(option).getGenre());
+			System.out.println("Birth date: "+patients.get(option).getBirth().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+			System.out.println("Appointment Number: "+patients.get(option).appointments.size());
+			if(patients.get(option).appointments == null) {			
+				System.out.println("The patient has no previous appointments.");			
+			} else {	
+				listAppointments(patients, option);
+			}
 		}
 	}
 	
@@ -235,4 +238,17 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 		} 
 	}
 
+	public LocalDate captureDate() { //TODO - Exception
+		LocalDate birthDate = null;
+		try {
+			birthDate = LocalDate.parse(getInput().next());
+			
+		} catch (DateTimeParseException e) {
+			System.out.println("Insert a valid format for date!");
+			System.out.println("Enter doctor's date of birth in yyyy-mm-dd format");
+			captureDate();
+		}
+		
+		return birthDate;
+	}
 }

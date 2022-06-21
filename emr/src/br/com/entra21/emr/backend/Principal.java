@@ -62,20 +62,24 @@ public class Principal {
 			String login = input.next();
 			System.out.println("Please insert your password: ");
 			String passwordString = input.next(); //TODO - Variaveis
-			Integer password = Integer.parseInt(passwordString);	//TODO - Wrapper
 			
-			if(login.equals(users.get(login).getUser()) && password.equals(users.get(login).getPassword())) {	//TODO - if
-				mountMenu(users.get(login).getTypeUser());
-				validLogin = true;
-			} else {	//TODO - else
+			try {	//TODO - Exeptions
+				Integer password = Integer.parseInt(passwordString);	//TODO - Wrapper
+				if(login.equals(users.get(login).getUser()) && password.equals(users.get(login).getPassword())) {	//TODO - if
+					mountMenu(users.get(login).getTypeUser());
+					validLogin = true;
+				} else {	//TODO - else
+					validLogin = false;
+				}
+			} catch (NumberFormatException e) {
 				validLogin = false;
+				System.out.println("The password only numbers.");
 			}
 		} catch (NullPointerException e) {
 			validLogin = false;;
 		}
 		return validLogin;
 	}
-	
 	
 	public static void mountMenu(Enum<TypeUser> userEnum) {	//TODO - Metodo com parametro
 		if(userEnum == TypeUser.ADMIN) {

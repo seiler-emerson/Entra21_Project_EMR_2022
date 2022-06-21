@@ -21,7 +21,7 @@ public class Main {
 			option = input.next();
 
 			switch (option) {	//TODO - switch
-			case "":
+			case "0":
 				System.out.println("Exiting...");
 				break;
 			case "1": 
@@ -41,7 +41,7 @@ public class Main {
 				break;
 			}
 
-		} while (option != "0");
+		} while (!option.equals("0"));
 		System.out.println("Thanks! ");
 
 	}
