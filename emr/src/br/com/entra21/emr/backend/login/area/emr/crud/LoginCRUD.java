@@ -128,7 +128,7 @@ public class LoginCRUD extends Menu implements ICrud<User> {
 		
 		
 		try {
-			System.out.println("Password must consist only of numbers. Maximum 6 numbers Minimum 4 numbers.");
+			System.out.println("Password must consist only of numbers.");
 			System.out.println("Enter the password:");
 			String password = getInput().next();
 			user.setPassword(Integer.parseInt(password)); //TODO - Wrapper
