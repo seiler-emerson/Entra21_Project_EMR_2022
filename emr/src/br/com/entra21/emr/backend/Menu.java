@@ -34,19 +34,20 @@ public class Menu {
 			System.out.println("Select an option:");
 			System.out.println("========================================================");
 			
-		} while (captureOption() != 0);
+		} while (captureOption() != "0");
 	}
 	
-	public byte captureOption() {
-		byte option;
-		option = input.nextByte();
+	public String captureOption() {
+		String option;
+		option = input.next();
 
 		switch (option) {
 
-		case -1:
+		case "-1":
+			System.out.println("Thanks for using the system");
 			System.exit(-1);
 			break;
-		case 0:
+	case "0":
 			System.out.println("Menu "+ this.title+" closed");
 			break;
 		}

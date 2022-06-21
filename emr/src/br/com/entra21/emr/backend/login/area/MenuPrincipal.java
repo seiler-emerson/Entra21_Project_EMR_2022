@@ -14,14 +14,14 @@ public class MenuPrincipal extends Menu {
 	}
 	
 	@Override
-	public byte captureOption() {
+	public String captureOption() {
 
-		byte opcao = super.captureOption();
+		String opcao = super.captureOption();
 		switch (opcao) {
-		case 1:  
+		case "1":  
 			new MenuEMR("ELECTRONIC MEDICAL RECORD", new ArrayList<String>(Arrays.asList("Patient", "Doctor","Appointment"))).playMenu();
 			break; 
-		case 2:  
+		case "2":  
 			new MenuReports("REPORTS", new ArrayList<String>(Arrays.asList("Number of Patients", "Number of Appointments", "List Patients", "List Doctors"))).playMenu();
 			break;
 		default:

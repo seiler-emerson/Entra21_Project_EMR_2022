@@ -28,22 +28,22 @@ public class AppointmentCRUD extends Menu {	//TODO - Extends
 	}
 	
 	@Override
-	public byte captureOption() {
-		byte opcao = super.captureOption();
+	public String captureOption() {
+		String opcao = super.captureOption();
 		switch (opcao) {
-		case 1:
+		case "1":
 			create(patients);
 			break;
-		case 2:
+		case "2":
 			listAppointments(patients);
 			break;
-		case 3:
+		case "3":
 			update(patients);
 			break;
-		case 4:
+		case "4":
 			delete(patients);
 			break;
-		case 5:
+		case "5":
 			details(patients);
 			break;
 		default:

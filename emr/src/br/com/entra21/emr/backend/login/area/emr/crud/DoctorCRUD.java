@@ -29,26 +29,26 @@ public class DoctorCRUD extends Menu implements ICrud<Doctor> {
 	}
 	
 	@Override
-	public byte captureOption() {
-		byte opcao = super.captureOption();
+	public String captureOption() {
+		String opcao = super.captureOption();
 		switch (opcao) {
-		case 1:
+		case "1":
 			System.out.println("CREATING DOCTOR");
 			create();
 			break;
-		case 2:
+		case "2":
 			System.out.println("LISTING DOCTOR");
 			list(doctors);
 			break;
-		case 3:
+		case "3":
 			System.out.println("UPDATING DOCTOR");
 			update(captureKey());
 			break;
-		case 4:
+		case "4":
 			System.out.println("DELETING DOCTOR");
 			delete(captureKey());
 			break;
-		case 5:
+		case "5":
 			System.out.println("DETAILING DOCTOR");
 			details(doctors);
 			break;

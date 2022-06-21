@@ -23,27 +23,27 @@ public class LoginCRUD extends Menu implements ICrud<User> {
 	}
 	
 	@Override
-	public byte captureOption() {
+	public String captureOption() {
 
-		byte option = super.captureOption();
+		String option = super.captureOption();
 		switch (option) {
-		case 1:
+		case "1":
 			System.out.println("CREATING USER");
 			create();
 			break;
-		case 2:
+		case "2":
 			System.out.println("LISTING USER");
 			list(users);
 			break;
-		case 3:
+		case "3":
 			System.out.println("UPDATING USER");
 			update(captureKey());
 			break;
-		case 4:
+		case "4":
 			System.out.println("DELETING USER");
 			delete(captureKey());
 			break;
-		case 5:
+		case "5":
 			System.out.println("DETAILING USER");
 			details(users);
 			break;

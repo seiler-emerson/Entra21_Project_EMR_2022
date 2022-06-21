@@ -25,27 +25,27 @@ public class PatientCRUD extends Menu implements ICrud<Patient> {
 	}
 
 	@Override
-	public byte captureOption() {
+	public String captureOption() {
 
-		byte option = super.captureOption();
+		String option = super.captureOption();
 		switch (option) {
-		case 1:
+		case "1":
 			System.out.println("CREATING PATIENT");
 			create();
 			break;
-		case 2:
+		case "2":
 			System.out.println("LISTING PATIENT");
 			list(patients);
 			break;
-		case 3:
+		case "3":
 			System.out.println("UPDATING PATIENT");
 			update(captureKey());
 			break;
-		case 4:
+		case "4":
 			System.out.println("DELETING PATIENT");
 			delete(captureKey());
 			break;
-		case 5:
+		case "5":
 			System.out.println("DETAILING PATIENT");
 			details(patients);
 			break;

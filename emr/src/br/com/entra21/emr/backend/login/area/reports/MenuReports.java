@@ -19,23 +19,23 @@ public class MenuReports extends Menu {
 	}
 	
 	@Override
-	public byte captureOption() {
+	public String captureOption() {
 
-		byte opcao = super.captureOption();
+		String opcao = super.captureOption();
 		switch (opcao) {
-		case 1:  
+		case "1":  
 			System.out.println("TOTAL PATIENTS");
 			Reports.totalPatients();
 			break;
-		case 2: 
+		case "2": 
 			System.out.println("TOTAL APPOINTMENTS");
 			Reports.totalAppointments(patients);
 			break;
-		case 3: 
+		case "3": 
 			System.out.println("PATIENTS LIST");
 			new PatientCRUD().list(patients);
 			break;
-		case 4: 
+		case "4": 
 			new DoctorCRUD().list(doctors);
 			break;
 		default:

@@ -18,17 +18,17 @@ public class MenuEMR extends Menu {
 	}
 	
 	@Override
-	public byte captureOption() {
+	public String captureOption() {
 
-		byte opcao = super.captureOption();
+		String opcao = super.captureOption();
 		switch (opcao) {
-		case 1:  
+		case "1":  
 			new PatientCRUD().playMenu();
 			break;
-		case 2: 
+		case "2": 
 			new DoctorCRUD().playMenu();
 			break;
-		case 3:
+		case "3":
 			new AppointmentCRUD().playMenu();
 			break;
 		default:

@@ -11,29 +11,29 @@ public class Main {
 	
 	public static void main(String[] args) {
 	
-		byte option;
+		String option;
 		do {
 			System.out.println(displayMenu());
 			
 			//metode generate Database //TODO - Comentarios
 			Repository.generateDataBase();  
 			
-			option = input.nextByte();
+			option = input.next();
 
 			switch (option) {	//TODO - switch
-			case 0:
+			case "":
 				System.out.println("Exiting...");
 				break;
-			case 1: 
+			case "1": 
 				Principal.login();
 				break;
-			case 2: 
+			case "2": 
 				Principal.record();
 				break;
-			case 3: 
+			case "3": 
 				Principal.recoverPassword();
 				break;
-			case 4: 
+			case "4": 
 				Principal.viewAboutInfo();
 				break; 
 			default:
@@ -41,7 +41,7 @@ public class Main {
 				break;
 			}
 
-		} while (option != 0);
+		} while (option != "0");
 		System.out.println("Thanks! ");
 
 	}
