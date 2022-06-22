@@ -1,115 +1,134 @@
-# Project EMR - Electronic Medical Record
 
-📜 Tabela de conteúdos
-=================
-* [Sobre o projeto](#sobre-o-projeto)
-* [Fluxograma da aplicação](#fluxograma)
-* [Diagrama de classes](#diagrama)
-* [Como executar o projeto](#-como-executar-o-projeto)
-* [Tecnologias](#-tecnologias)  
-* [Autores](#-autor)
+## Project EMR - Electronic Medical Record
+
+## 🗃️&nbsp; Table of Contents
+
+* [About the project](#about-project)
+* [Class diagram](#class-diagram)
+* [Application flowchart](#application-flowchart)
+* [Application in operation](#application-operation)
+* [Instructions for execute the Project](#execute-project)
+* [Technologies and Concepts](#technologies)  
+* [Authors](#authors)
 
 </br>
 
 ---
 
-## 💻 Sobre o projeto
 
-Se trata de um sistema utilizado para realizar a gestão de atendimentos de uma clínica. Possui funcionalidades para realizar a gestão de pacientes com seus respectivos prontuários que por sua vez armazenam seus atendimentos.
+## 🏥&nbsp; About the project <a name="about-project"></a>
+
+It is a system used to manage the attendance of a clinic. It has functionalities to manage patients with their respective medical records, which in turn store their medical consultation.
 
 <br>
 
 ---
 
-## ⚙️ Fluxograma da Aplicação
-
-O fluxo do sistema se baseia no conceito:
-- Paciente ➡️ Prontuário ➡️ Atendimentos
-
-![Fluxograma](./image/emr_fluxo.png)
-
-</br>
-
-----
-
-## Diagrama de Classes
+## 📈&nbsp;Class Diagram <a name="class-diagram"></a>
  
-![Diagrama](./image/emr_diagrama.png)
+![Diagram](./image/emr_diagrama.png)
+
+</br>
+
+----
+## 🔀&nbsp; Application flowchart <a name="application-flowchart"></a>
+
+The system flow is based on the concept:
+- Patient ➡️ Medical Record ➡️ medical consultation 
+
+<details>
+    <summary><b>👈🏽 &nbsp; Click here to expand the flowchart </b></summary>
+
+![Flowchart](./image/fluxo_emr.png)
+
+</details>
 
 </br>
 
 ----
 
-# Instruções para rodar o Projeto
+## ▶️&nbsp; Application in operation <a name="application-operation"></a>
 
-1. Faça uma cópia do projeto para sua máquina: 
+  | Functionality  | View Here |
+  |------|---------|
+  |🏥&nbsp; Menu Principal|[<div align="center">▶️</div>](./readmes/main.md)|
+  |👨🏻‍💻&nbsp; User CRUD|[<div align="center">▶️</div>](./readmes/user.md)
+  |😷&nbsp; Patient CRUD|[<div align="center">▶️</div>](./readmes/patient.md)
+  |👩‍🔬&nbsp; Doctor CRUD|[<div align="center">▶️</div>](./readmes/doctor.md)
+  |🩺&nbsp; Appointment CRUD|[<div align="center">▶️</div>](./readmes/appointment.md)
+  |📊&nbsp; Reports|[<div align="center">▶️</div>](./readmes/reports.md)
+  <br />
+
+## 👨🏽‍🏫&nbsp; Instructions for execute the Project <a name="execute-project"></a>
+
+1. Make a project copy to your machine:
     - git clone https://github.com/seiler-emerson/Entra21_Project_EMR_2022.git
-    - Ou um download direto da página [AQUI](https://github.com/seiler-emerson/Entra21_Project_EMR_2022).
-    - Importe o projeto em sua IDE e execute a aplicação.
-        - Tutorial de como importar um projeto na IDE Eclipse [AQUI](https://www.youtube.com/watch?v=R-8OF9ipeT8).
-2. Execute via replit
-    - ICONE COM LINK
+    - Or a direct download from the page [HERE](https://github.com/seiler-emerson/Entra21_Project_EMR_2022).
+    - Import the project into your IDE and execute the application.
+        - Tutorial how to import a project in the Eclipse IDE [HERE](https://www.youtube.com/watch?v=R-8OF9ipeT8).
+2. Run with REPLIT
+    - (Not implemented))
 
 </br>
 
 ---
 
-## ⚒ Tecnologias e Conceitos
+## 📚&nbsp; Technologies and Concepts <a name="technologies"></a>
 
-Neste projeto utiliZamos a linguagem JAVA e aplicamos os seguintes conceitos:
+In this project we use JAVA language and apply the following concepts:
 
 <details>	
-  <summary><b>💡&nbsp; Lógica de programação</b></summary>
+  <summary><b>💡&nbsp; Programming logic</b></summary>
 
 1. Git
-    - Repositório
-    - Documentação
+    - Repository
+    - Documentation
     - README.md
     - Replit
-2. Organização do projeto
+2. Project organization
     - Packages / sub-packages
-    - Nomenclatura
-3. Elementos básicos
-    - variáveis
-    - constantes
-    - comentários
-4. Estruturas de decisão
+    - Nomenclature
+3. Basic elements
+    - variables
+    - constants
+    - comments
+4. Decision structures
     - if, else-if, else
     - switch
-5. Laços de repetição
+5. Repeat loops
     - for
     - while
     - do-while
-6. Modularização
-    - métodos com ou sem parâmetros e com ou sem retornos
-    - recursividade
+6. Modularization
+    - methods with or without parameters and with or without returns
+    - recursion
 </details>
 
 <details>	
-  <summary><b>🗃️&nbsp; Orientação a objetos</b></summary>
+  <summary><b>🗃️&nbsp; Object Oriented Programming</b></summary>
   
 1. Classes
-    - diagrama de classe
-    - atributos
-    - construtores
-    - encapsulamento
-    - métodos específicos
-    - instanciar objetos
-2. Herança
+    - class diagram
+    - attributes
+    - builders
+    - encapsulation
+    - specific methods
+    - instantiate objects
+2. Heritage
     - extends
-    - criar novos construtores com base na super classe
-    - Polimorfismo
-        - Apenas aproveitar os métodos
-        - Fazer completamente de forma especifica
-        - Sobrescrever para:
-            - Fazer de forma especifica
-            - Aproveitar o comportamento e fazer um complemento
-3. Polimorfismo
+    - create new constructors based on the super class
+    - Polymorphism
+        - Just take advantage of the methods
+        - Do it completely specifically
+        - Overwrite to:
+            - Do it specifically
+            - Take advantage of the behavior and make a complement
+3. Polymorphism
     - interfaces
 </details>
 
 <details>
-   <summary><b>⚠️&nbsp; Java avançado</b></summary>
+   <summary><b>⚠️&nbsp; Advanced java</b></summary>
 
 1. Classes wrapper
 2. ENUM
@@ -119,7 +138,7 @@ Neste projeto utiliZamos a linguagem JAVA e aplicamos os seguintes conceitos:
     - LinkedList
     - HashSet
     - HashMap
-5. Funções Lambda
+5. Lambda functions
 6. Generics
 7. Dates
 8. Exceptions
@@ -130,43 +149,48 @@ Neste projeto utiliZamos a linguagem JAVA e aplicamos os seguintes conceitos:
 
 ---
 
-## 👷 Autores
+## 👨🏻‍🎓👩‍🎓👨🏼‍🎓&nbsp; Authors <a name="authors"></a>
 
 <br>
 
+<table>
+<thead>
+	<tr>
+	    <th>
+            <img style="border-radius: 10px;" src="https://avatars.githubusercontent.com/Ba-Ribeiro" width="100px;" alt=""/>
+        </th>
+		<th>
+            <a href="https://seiler-emerson.github.io/">
+                <img style="border-radius: 10px" src="https://avatars.githubusercontent.com/seiler-emerson" width="100px;" alt=""/>
+            </a>
+        </th>
+		<th>
+            <img style="border-radius: 10px;" src="https://avatars.githubusercontent.com/Wellitonborges" width="100px;" alt=""/>
+        </th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+        <td>
+            <a href="https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/">
+                <img src="https://img.shields.io/badge/-barbararibeiro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/" width="100px;" alt=""/>
+            </a>
+        </td>
+		<td>
+            <a href="https://www.linkedin.com/in/seileremerson/">
+                <img src="https://img.shields.io/badge/-seileremerson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/seileremerson/" width="100px;" alt=""/>
+            </a>
+        </td>
+		<td>
+            <a href="https://www.linkedin.com/in/welliton-borges-904331190/">
+                <img src="https://img.shields.io/badge/-wellitonborges-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/welliton-borges-904331190/" width="100px;" alt=""/>
+            </a>
+        </td>
+	</tr>
+</tbody>
+</table>
 
-
-<div style="display:flex;">
-    <div style="margin-right:30px;">
-        <a href="https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/">
-        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/Ba-Ribeiro" width="100px;" alt=""/>
-        <br />
-        <sub><b>Bárbara Ribeiro</b></sub></a> <a href="https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/" title="Bárbara Ribeiro"></a>
-        <br />
-
-[![Linkedin Badge](https://img.shields.io/badge/-barbararibeiro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/)](https://www.linkedin.com/in/B%C3%A1rbaraRibeiro050392/)
-    </div>
-
-<div style="margin-right:30px;">
-    <a href="https://www.linkedin.com/in/seileremerson/">
-    <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/seiler-emerson" width="100px;" alt=""/>
-    <br />
-    <sub><b>Emerson Seiler</b></sub></a> <a href="https://www.linkedin.com/in/seileremerson/" title="Emerson Seiler"></a>
-    <br />
-
-[![Linkedin Badge](https://img.shields.io/badge/-seileremerson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/seileremerson/)](https://www.linkedin.com/in/seileremerson/)
-    </div>
-
-<div>
-    <a href="https://www.linkedin.com/in/welliton-borges-904331190/">
-    <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/Wellitonborges" width="100px;" alt=""/>
-    <br />
-    <sub><b>Welliton Borges</b></sub></a> <a href="https://www.linkedin.com/in/welliton-borges-904331190/" title="Welliton Borges"></a>
-    <br />
-
-[![Linkedin Badge](https://img.shields.io/badge/-wellitonborges-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/welliton-borges-904331190/)](https://www.linkedin.com/in/welliton-borges-904331190/)
-    </div>
-</div>
 <br>
 
 ---
+
